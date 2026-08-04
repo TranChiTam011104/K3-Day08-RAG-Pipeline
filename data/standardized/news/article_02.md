@@ -1,24 +1,13 @@
-# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS
+# Bách khoa Hà Nội trao 4 tỷ đồng học bổng sau đại học, miễn học phí cho tất cả NCS trúng tuyển từ 2026
 
 - **Trường:** HUST
-- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online
-- **Ngày crawl:** 2026-08-04T10:23:17.430869
+- **Nguồn:** https://hust.edu.vn/vi/news/tuyen-sinh-dao-tao-cong-tac-sinh-vien/bach-khoa-ha-noi-trao-4-ty-dong-hoc-bong-sau-dai-hoc-mien-hoc-phi-cho-tat-ca-ncs-trung-tuyen-tu-2026-655834.html
+- **Ngày crawl:** 2026-08-04
 
 ---
 
-# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST
+# Bách khoa Hà Nội trao học bổng sau đại học
 
-Phòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.
+Ngày 20/3/2026, Đại học Bách khoa Hà Nội tổ chức lễ trao học bổng sau đại học năm 2025. Chương trình có tổng kinh phí hỗ trợ hằng năm 4 tỷ đồng và vinh danh 139 cá nhân, gồm 135 học viên cao học và 4 nghiên cứu sinh.
 
-## 1. Lịch đăng ký học phần trên CTT-SIS
-- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.
-- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.
-- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.
-
-## 2. Phương thức thanh toán học phí qua mã định danh
-Sinh viên có thể đóng học phí bằng các cách sau:
-- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).
-- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).
-
-## 3. Lưu ý về Công nợ
-Sinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.
+Đại diện Nhà trường cho biết chính sách nhằm giảm áp lực chi phí và khuyến khích người học theo đuổi nghiên cứu. Tại sự kiện, lãnh đạo Đại học công bố chủ trương miễn học phí cho tất cả nghiên cứu sinh trúng tuyển từ năm 2026, đồng thời kỳ vọng mở rộng kinh phí hỗ trợ trong năm tiếp theo.

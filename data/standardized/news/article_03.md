@@ -1,22 +1,13 @@
-# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn
+# Sinh viên tốt nghiệp Bách khoa Hà Nội tiếp tục khẳng định năng lực với học bổng châu Âu 2026
 
 - **Trường:** HUST
-- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc
-- **Ngày crawl:** 2026-08-04T10:23:17.431864
+- **Nguồn:** https://www.hust.edu.vn/vi/news/tin-tuc-su-kien/sinh-vien-tot-nghiep-bach-khoa-ha-noi-tiep-tuc-khang-dinh-nang-luc-voi-hoc-bong-chau-au-2026-655942.html
+- **Ngày crawl:** 2026-08-04
 
 ---
 
-# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội
+# Sinh viên tốt nghiệp Bách khoa Hà Nội với học bổng châu Âu 2026
 
-Đại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.
+Theo số liệu được Phái đoàn Liên minh châu Âu tại Việt Nam công bố đầu tháng 6/2026, Việt Nam có 55 sinh viên trúng tuyển các chương trình Erasmus Mundus, trong đó 36 người nhận học bổng toàn phần. Tính đến ngày 2/6/2026, sáu cựu sinh viên Đại học Bách khoa Hà Nội đã nhận học bổng toàn phần.
 
-## 1. Mức hỗ trợ tài chính
-- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).
-- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.
-
-## 2. Đối tượng thụ hưởng
-- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.
-- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.
-
-## 3. Đăng ký xét duyệt
-Sinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`.
+Các ứng viên đến từ Trường Điện - Điện tử, Trường Cơ khí, Trường Công nghệ thông tin và Truyền thông, cùng Trường Hóa và Khoa học sự sống. Mỗi suất trị giá khoảng 50.000 euro cho hai năm, bao gồm học phí, đi lại và trợ cấp sinh hoạt.

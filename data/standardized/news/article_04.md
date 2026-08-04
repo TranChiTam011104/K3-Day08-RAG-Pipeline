@@ -1,23 +1,13 @@
-# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026
+# Thông báo thu hồ sơ miễn giảm học phí và hỗ trợ chi phí học tập đợt 2 năm học 2025-2026
 
 - **Trường:** NEU
-- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026
-- **Ngày crawl:** 2026-08-04T10:23:17.431864
+- **Nguồn:** https://fit.neu.edu.vn/post/thong-bao-ve-viec-thu-ho-so-mien-giam-hoc-phi-va-ho-tro-chi-phi-hoc-tap-cho-sinh-vien-dot-2-nam-hoc-2025-2026
+- **Ngày crawl:** 2026-08-04
 
 ---
 
-# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU
+# Thu hồ sơ miễn giảm học phí và hỗ trợ chi phí học tập
 
-Phòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.
+Đại học Kinh tế Quốc dân thông báo thu hồ sơ đợt 2 năm học 2025-2026 cho sinh viên khóa 64, 65, 66 và 67 thuộc diện chính sách. Đối tượng nêu trong thông báo gồm một số sinh viên dân tộc thiểu số thuộc hộ nghèo hoặc cận nghèo, người có hộ khẩu tại khu vực đặc biệt khó khăn, và sinh viên mới thuộc diện chính sách chưa nộp hồ sơ ở kỳ trước.
 
-## 1. Các đối tượng được miễn, giảm học phí
-- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.
-- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.
-- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.
-
-## 2. Hồ sơ yêu cầu
-- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).
-- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).
-
-## 3. Địa điểm nộp hồ sơ
-Nộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025.
+Thời gian tiếp nhận từ ngày 02/03/2026 đến hết ngày 20/03/2026. Hồ sơ miễn, giảm học phí và hồ sơ hỗ trợ chi phí học tập được chuẩn bị theo các phụ lục tương ứng của thông báo.
