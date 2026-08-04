@@ -35,9 +35,30 @@ def _validate_search_input(query: str, top_k: int) -> str:
 @lru_cache(maxsize=1)
 def _get_embedding_model():
     """Load exactly the embedding model configured by Task 4, once per process."""
-    from sentence_transformers import SentenceTransformer
+    if "text-embedding" in EMBEDDING_MODEL:
+        import os
+        from openai import OpenAI
+        class OpenAIEmbeddingWrapper:
+            def __init__(self, model_name):
+                self.model_name = model_name
+                self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+            
+            def encode(self, texts, **kwargs):
+                # Ensure input is a list of strings
+                if isinstance(texts, str):
+                    texts = [texts]
+                response = self.client.embeddings.create(
+                    model=self.model_name,
+                    input=texts,
+                    encoding_format="float"
+                )
+                embeddings = [item.embedding for item in response.data]
+                return embeddings[0] if len(embeddings) == 1 else embeddings
 
-    return SentenceTransformer(EMBEDDING_MODEL)
+        return OpenAIEmbeddingWrapper(EMBEDDING_MODEL)
+    else:
+        from sentence_transformers import SentenceTransformer
+        return SentenceTransformer(EMBEDDING_MODEL)
 
 
 @lru_cache(maxsize=1)
