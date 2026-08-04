@@ -1,0 +1,1314 @@
+{
+  "A_hybrid_rerank": {
+    "label": "Config A — hybrid (dense + BM25) + RRF rerank",
+    "scores": {
+      "faithfulness": 0.9305555555555556,
+      "answer_relevancy": 0.5921124513879753,
+      "context_recall": 1.0,
+      "context_precision": 0.9304012345384041,
+      "average": 0.8632673103704838
+    },
+    "records": [
+      {
+        "id": "Q01",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Học bổng loại A (Xuất sắc) của Đại học Bách Khoa Hà Nội yêu cầu GPA và điểm rèn luyện tối thiểu bao nhiêu?",
+        "answer": "Học bổng loại A (Xuất sắc) của Đại học Bách Khoa Hà Nội yêu cầu GPA tối thiểu là 3.6 và điểm rèn luyện tối thiểu là 90. [Source: article_01.md]",
+        "contexts": [
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "MUC 2: Chinh sach Hoc bong Khuyen khich Hoc tap \\(KKHT\\)\n- Hoc bong loai A \\(Xuat sac\\): GPA >= 3.6, Diem ren luyen >= 90. Muc hoc bong: 120% hoc phi.\n- Hoc bong loai B \\(Gioi\\): GPA >= 3.2, Diem ren luyen >= 80. Muc hoc bong: 100% hoc phi.\n- Hoc bong loai C \\(Kha\\): GPA >= 2.5, Diem ren luyen >= 65. Muc hoc bong: 50% hoc phi.\n\nMUC 3: Hoc bong Tran Dai Nghia va Hoc bong Nghin cuu sinh\n- Hoc bong Tran Dai Nghia ho tro 50%-100% hoc phi cho sinh vien co hoan canh dac biet kho khan.\n- Nghin cuu sinh tien si trung tuyen duoc cap hoc bong 100% hoc phi.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc."
+        ],
+        "ground_truth": "Học bổng loại A (Xuất sắc) yêu cầu GPA từ 3.6 trở lên và điểm rèn luyện từ 90 trở lên. Mức cấp là 120% học phí học kỳ.",
+        "expected_sources": [
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md",
+          "article_04.md",
+          "article_02.md",
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 5.1
+      },
+      {
+        "id": "Q02",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Học bổng Trần Đại Nghĩa của HUST dành cho đối tượng nào và mức hỗ trợ là bao nhiêu?",
+        "answer": "Học bổng Trần Đại Nghĩa của HUST dành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất. Mức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí [Source: article_01.md].",
+        "contexts": [
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc.",
+          "MUC 2: Chinh sach Hoc bong Khuyen khich Hoc tap \\(KKHT\\)\n- Hoc bong loai A \\(Xuat sac\\): GPA >= 3.6, Diem ren luyen >= 90. Muc hoc bong: 120% hoc phi.\n- Hoc bong loai B \\(Gioi\\): GPA >= 3.2, Diem ren luyen >= 80. Muc hoc bong: 100% hoc phi.\n- Hoc bong loai C \\(Kha\\): GPA >= 2.5, Diem ren luyen >= 65. Muc hoc bong: 50% hoc phi.\n\nMUC 3: Hoc bong Tran Dai Nghia va Hoc bong Nghin cuu sinh\n- Hoc bong Tran Dai Nghia ho tro 50%-100% hoc phi cho sinh vien co hoan canh dac biet kho khan.\n- Nghin cuu sinh tien si trung tuyen duoc cap hoc bong 100% hoc phi."
+        ],
+        "ground_truth": "Dành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất. Mức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.",
+        "expected_sources": [
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_01.md",
+          "article_03.md",
+          "article_01.md",
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.13
+      },
+      {
+        "id": "Q03",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Sinh viên HUST nộp hồ sơ xét học bổng khuyến khích học tập học kỳ 1 trước ngày nào và qua cổng nào?",
+        "answer": "Sinh viên HUST nộp hồ sơ xét học bổng khuyến khích học tập học kỳ 1 trước ngày 28/11/2025 và qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` [Source: article_01.md].",
+        "contexts": [
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "QUY DINH HOC PHI VA CHINH SACH HOC BONG - DAI HOC XAY DUNG HA NOI \\(HUCE\\)\n\nQUYET DINH MUC THU HOC PHI VA QUY HOC BONG\nTruong: Dai hoc Xay dung Ha Noi \\(HUCE\\)\nQuyet dinh so: 960/QD-DHXDHN\n\nMc 1: Mc thu Hoc phi theo tin chi\n- Mc thu hoc phi trung binh chuong trinh chuan: 18.500.000 VN / nam hoc.\n- Mc thu tin chi hoc phan ly thuyet va thuc hanh theo quy dinh tai Quyt nh 960.\n- Mien giam hoc phi theo Nghi dinh 81/2021/ND-CP va cac quy dinh hien hanh.\n\nMc 2: Chinh sach Hoc bong STEM va Khuyen khich hoc tap\n- Hoc bong Khuyen khich hoc tap duoc trich tu 8% tong thu hoc phi sinh vien.\n- Hc bng STEM Quy Chau A danh cho sinh vien nu cac nganh Ky thuat, Xay dung.\n- Hoc bong Doanh nghiep nganh Xay dung ho tro sinh vien xuat sac va sinh vien vuot kho.",
+          "QUY DINH HOC PHI VA CHINH SACH TRO CAP SINH VIEN - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH QUY DINH HOC PHI VA HOC BONG TAI TRO\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nNam hoc: 2025-2026\n\nPhan 1: Mc thu Hoc phi va Thoi han np\n- Chuong trinh chuan: 18.000.000 VN den 25.000.000 VN / nam hoc.\n- Chuong trinh Chat luong cao, POHE: 45.000.000 VN den 65.000.000 VN / nam hoc.\n- Thoi han nop hoc phi: Trong 4 tuan dau tin cua hoc ky.\n\nPhan 2: Hoc bong Khuyen khich hoc tap va Hoc bong Doanh nghiep\n- Hoc bong Khuyen khich hoc tap xet theo ket qua hoc tap va diem ren luyen.\n- Qu hoc bong doanh nghiep \\(Vietcombank, VPBank, Agribank\\) trao 50-100 suat hoc bong / nam.\n- Muc ho tro hoc bong doanh nghiep: 10.000.000 VN den 20.000.000 VN / sinh vien."
+        ],
+        "ground_truth": "Sinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại https://ctt.hust.edu.vn trước ngày 28/11/2025.",
+        "expected_sources": [
+          "article_01.md"
+        ],
+        "retrieved_sources": [
+          "article_01.md",
+          "article_01.md",
+          "article_02.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md",
+          "quy-dinh-hoc-phi-hoc-bong-neu.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 1.9
+      },
+      {
+        "id": "Q04",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Mỗi học kỳ chính sinh viên Bách Khoa Hà Nội được đăng ký tối thiểu và tối đa bao nhiêu tín chỉ?",
+        "answer": "Mỗi học kỳ chính, sinh viên Bách Khoa Hà Nội được đăng ký tối thiểu 12 tín chỉ và tối đa 24 tín chỉ [Source: article_02.md].",
+        "contexts": [
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "## 2. Tiêu chí lựa chọn\n- Nữ sinh viên khóa mới trúng tuyển vào các ngành Kỹ thuật Xây dựng, Cầu đường, Kiến trúc, Môi trường.\n- Gia cảnh khó khăn, có tinh thần vượt khó vươn lên trong học tập.\n\n## 3. Hồ sơ ứng tuyển\nSinh viên chuẩn bị hồ sơ nộp về Phòng Công tác Chính trị & Quản lý sinh viên trước ngày 30/10/2025.",
+          "QUY CHE DAO TAO DAI HOC HE CHINH QUY - DAI HOC XAY DUNG HA NOI \\(HUCE\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO HE TIN CHI\nTruong: Dai hoc Xay dung Ha Noi \\(HUCE\\)\nQuyet dinh ban hanh: 2025\n\nDieu 1: To chuc dao tao theo he thong tin chi\n- Nam hoc gom 2 hoc ky chinh va 1 hoc ky he.\n- Sinh vien dang ky hoc phan qua cong daotao.huce.edu.vn.\n- So tin chi toi da dang ky trong hoc ky chinh la 22 tin chi.\n\nDieu 2: Danh gia ket qua va Xet hoc vu\n- Diem hoc phan ket hop diem qua trinh \\(30%-40%\\) va diem thi ket thuc hoc phan \\(60%-70%\\).\n- Thang diem 10 duoc quy doi sang thang diem 4 va diem chu \\(A, B, C, D, F\\).\n- Canh bao hoc vu duoc thuc hien sau moi hoc ky chinh.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc."
+        ],
+        "ground_truth": "Tối thiểu 12 tín chỉ và tối đa 24 tín chỉ mỗi học kỳ chính. Sinh viên bị cảnh báo học tập mức 1 chỉ được đăng ký tối đa 14 tín chỉ.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "article_02.md"
+        ],
+        "retrieved_sources": [
+          "article_02.md",
+          "article_01.md",
+          "article_09.md",
+          "quy-che-dao-tao-dai-hoc-huce.md",
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.07
+      },
+      {
+        "id": "Q05",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Sinh viên HUST có thể thanh toán học phí trực tuyến bằng những phương thức nào?",
+        "answer": "Sinh viên HUST có thể thanh toán học phí trực tuyến bằng các phương thức sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`) [Source: article_02.md].",
+        "contexts": [
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "## 2. Lịch nộp học phí\n- Đợt 1 (Học kỳ Thu): Nộp từ ngày 01/09/2025 đến ngày 15/10/2025.\n- Đợt 2 (Học kỳ Xuân): Nộp từ ngày 01/02/2026 đến ngày 15/03/2026.\n\n## 3. Cổng thanh toán\nSinh viên thực hiện thanh toán qua Cổng thông tin đào tạo `https://daotao.huce.edu.vn` hoặc ứng dụng ngân hàng đối tác.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "# NEU - Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/ngay-hoi-viec-lam-va-tu-van-tuyen-sinh-neu-open-day-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.433866\n\n---\n\n# Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\nTrường Đại học Kinh tế Quốc dân trân trọng thông báo chuỗi sự kiện NEU Open Day 2026 và Ngày hội Kết nối Doanh nghiệp.\n\n## 1. Nội dung chương trình\n- **Tư vấn hướng nghiệp:** Giao lưu trực tiếp với các Chuyên gia kinh tế và Cựu sinh viên thành đạt.\n- **Gian hàng tuyển dụng:** Hơn 80 doanh nghiệp, tập đoàn lớn (Big4, Vietcombank, VinGroup, Shopee) tham gia phỏng vấn tuyển dụng trực tiếp.\n- **Workshop Kỹ năng:** Hướng dẫn viết CV chuyên nghiệp và kỹ năng phỏng vấn tiếng Anh."
+        ],
+        "ground_truth": "Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS có tích hợp VNPAY hoặc Momo, hoặc chuyển khoản ngân hàng qua mã định danh sinh viên theo dạng HUST + MSSV.",
+        "expected_sources": [
+          "article_02.md"
+        ],
+        "retrieved_sources": [
+          "article_02.md",
+          "article_08.md",
+          "article_03.md",
+          "article_02.md",
+          "article_06.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.62
+      },
+      {
+        "id": "Q06",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Chuyện gì xảy ra nếu sinh viên HUST không hoàn tất nghĩa vụ học phí đúng hạn?",
+        "answer": "Nếu sinh viên HUST không hoàn tất nghĩa vụ học phí đúng hạn, họ sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần [Source: article_02.md].",
+        "contexts": [
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "# HUCE - Hoạt động Thư viện HUCE & Cuộc thi Nghiên cứu Khoa học Sinh viên HUCE-Intech\n\n- **Trường:** HUCE\n- **Nguồn:** https://thuvien.huce.edu.vn/tin-tuc/hoat-dong-thu-vien-huce-va-cuoc-thi-nghien-cuu-khoa-hoc-sinh-vien-huce-intech\n- **Ngày crawl:** 2026-08-04T10:23:17.436877\n\n---\n\n# Hoạt động Thư viện HUCE & Phát động Cuộc thi NCKH Sinh viên HUCE-Intech 2026\n\nThư viện và Ban Khai thác Nghiên cứu Khoa học Trường Đại học Xây dựng Hà Nội tổ chức chuỗi hoạt động học thuật cho sinh viên.\n\n## 1. Dịch vụ Thư viện HUCE\n- Thư viện cung cấp bộ học liệu chuyên ngành Đô thị, Kiến trúc, Xây dựng dân dụng và Công nghiệp.\n- Mở rộng phòng đọc tự học đến 22h00 hàng ngày trong các tuần thi cao điểm.",
+          "# NEU - Khai thác tài nguyên Thư viện số NEU Library và Đăng ký phòng học nhóm cho tân sinh viên\n\n- **Trường:** NEU\n- **Nguồn:** https://thuvien.neu.edu.vn/tin-tuc/khai-thac-tai-nguyen-thu-vien-so-neu-library-va-dang-ky-phong-hoc-nhom\n- **Ngày crawl:** 2026-08-04T10:23:17.432867\n\n---\n\n# Hướng dẫn Khai thác Thư viện số NEU Library và Dịch vụ Phòng tự học\n\nThư viện Đại học Kinh tế Quốc dân (NEU Library) giới thiệu các dịch vụ học liệu và không gian tự học hiện đại phục vụ sinh viên.\n\n## 1. Dịch vụ Thư viện số (Digital Library)\n- Truy cập hơn 50.000 giáo trình, tài liệu tham khảo điện tử qua trang `https://thuvien.neu.edu.vn`.\n- Đăng nhập bằng mã sinh viên và mật khẩu tài khoản trường cấp để tra cứu cơ sở dữ liệu quốc tế (ProQuest, ScienceDirect)."
+        ],
+        "ground_truth": "Sinh viên sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+        "expected_sources": [
+          "article_02.md"
+        ],
+        "retrieved_sources": [
+          "article_02.md",
+          "article_01.md",
+          "article_04.md",
+          "article_10.md",
+          "article_05.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 1.67
+      },
+      {
+        "id": "Q07",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí và sinh hoạt phí ở mức nào?",
+        "answer": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo) và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng. [Source: article_03.md]",
+        "contexts": [
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUCE - Thông báo Tuyển chọn & Trao học bổng STEM Quỹ Châu Á dành cho sinh viên Nữ ngành Kỹ thuật\n\n- **Trường:** HUCE\n- **Nguồn:** https://ctsv.huce.edu.vn/tin-tuc/thong-bao-tuyen-chon-va-trao-hoc-bong-stem-quy-chau-a-sinh-vien-nu\n- **Ngày crawl:** 2026-08-04T10:23:17.435865\n\n---\n\n# Học bổng STEM Quỹ Châu Á (Asia Foundation) dành cho Sinh viên Nữ HUCE\n\nTrường Đại học Xây dựng Hà Nội phối hợp với Quỹ Châu Á thông báo chương trình Học bổng STEM dành riêng cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng.\n\n## 1. Giá trị học bổng\n- Hỗ trợ **100% học phí** cho toàn bộ khóa học 4,5 năm.\n- Cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành.",
+          "QUY DINH HOC PHI VA HOC BONG SINH VIEN - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH MUC THU HOC PHI VA CHINH SACH HOC BONG\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nQuyet dinh so: 1024/QD-DHBK\n\nMUC 1: Quy dinh ve Hoc phi\n- Hoc phi duoc tinh theo so tin chi hoc phi \\(TCHP\\) dang ky trong hoc ky.\n- Muc hoc phi chuong trinh chuan: 28.000.000 VN den 35.000.000 VN / nam hoc.\n- Muc hoc phi chuong trinh ELITECH va Tin tien: 45.000.000 VN den 67.000.000 VN / nam hoc.\n- Hoc ky he: Muc hoc phi tinh bang 1.5 lan hoc ky chinh.",
+          "QUY DINH HOC PHI VA CHINH SACH HOC BONG - DAI HOC XAY DUNG HA NOI \\(HUCE\\)\n\nQUYET DINH MUC THU HOC PHI VA QUY HOC BONG\nTruong: Dai hoc Xay dung Ha Noi \\(HUCE\\)\nQuyet dinh so: 960/QD-DHXDHN\n\nMc 1: Mc thu Hoc phi theo tin chi\n- Mc thu hoc phi trung binh chuong trinh chuan: 18.500.000 VN / nam hoc.\n- Mc thu tin chi hoc phan ly thuyet va thuc hanh theo quy dinh tai Quyt nh 960.\n- Mien giam hoc phi theo Nghi dinh 81/2021/ND-CP va cac quy dinh hien hanh.\n\nMc 2: Chinh sach Hoc bong STEM va Khuyen khich hoc tap\n- Hoc bong Khuyen khich hoc tap duoc trich tu 8% tong thu hoc phi sinh vien.\n- Hc bng STEM Quy Chau A danh cho sinh vien nu cac nganh Ky thuat, Xay dung.\n- Hoc bong Doanh nghiep nganh Xay dung ho tro sinh vien xuat sac va sinh vien vuot kho."
+        ],
+        "ground_truth": "Hỗ trợ học phí toàn phần 100% chương trình đào tạo và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng.",
+        "expected_sources": [
+          "article_03.md"
+        ],
+        "retrieved_sources": [
+          "article_03.md",
+          "article_01.md",
+          "article_09.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.46
+      },
+      {
+        "id": "Q08",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Học phí một năm của chương trình chuẩn và chương trình ELITECH tại HUST là bao nhiêu?",
+        "answer": "Học phí một năm của chương trình chuẩn tại HUST là từ 28.000.000 VN đến 35.000.000 VN, trong khi học phí của chương trình ELITECH là từ 45.000.000 VN đến 67.000.000 VN. [Source: quy-dinh-hoc-phi-hoc-bong-hust.md]",
+        "contexts": [
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat.",
+          "QUY DINH HOC PHI VA HOC BONG SINH VIEN - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH MUC THU HOC PHI VA CHINH SACH HOC BONG\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nQuyet dinh so: 1024/QD-DHBK\n\nMUC 1: Quy dinh ve Hoc phi\n- Hoc phi duoc tinh theo so tin chi hoc phi \\(TCHP\\) dang ky trong hoc ky.\n- Muc hoc phi chuong trinh chuan: 28.000.000 VN den 35.000.000 VN / nam hoc.\n- Muc hoc phi chuong trinh ELITECH va Tin tien: 45.000.000 VN den 67.000.000 VN / nam hoc.\n- Hoc ky he: Muc hoc phi tinh bang 1.5 lan hoc ky chinh."
+        ],
+        "ground_truth": "Chương trình chuẩn từ 28.000.000 đến 35.000.000 VNĐ/năm học. Chương trình ELITECH và tiên tiến từ 45.000.000 đến 67.000.000 VNĐ/năm học.",
+        "expected_sources": [
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_03.md",
+          "article_08.md",
+          "article_02.md",
+          "quy-che-dao-tao-dai-hoc-neu.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.46
+      },
+      {
+        "id": "Q09",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Chuẩn đầu ra tiếng Anh của sinh viên đại học chính quy Bách Khoa Hà Nội là gì?",
+        "answer": "Chuẩn đầu ra tiếng Anh cho sinh viên đại học chính quy Bách Khoa Hà Nội là TOEIC 500 hoặc IELTS 5.5 trở lên. [Source: quy-che-dao-tao-dai-hoc-hust.md]",
+        "contexts": [
+          "Chieu 3: Chuan dau ra Ngoai ngu va Tin hoc\n- Chuan dau ra Tieng Anh cho sinh vien dai hoc chinh quy: TOEIC 500 hoac IELTS 5.5 tr len.\n- Chuan dau ra Tin hoc: Chung chi tin hoc van phong IC3 hoac MOS.",
+          "QUY DINH HOC PHI VA CHINH SACH TRO CAP SINH VIEN - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH QUY DINH HOC PHI VA HOC BONG TAI TRO\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nNam hoc: 2025-2026\n\nPhan 1: Mc thu Hoc phi va Thoi han np\n- Chuong trinh chuan: 18.000.000 VN den 25.000.000 VN / nam hoc.\n- Chuong trinh Chat luong cao, POHE: 45.000.000 VN den 65.000.000 VN / nam hoc.\n- Thoi han nop hoc phi: Trong 4 tuan dau tin cua hoc ky.\n\nPhan 2: Hoc bong Khuyen khich hoc tap va Hoc bong Doanh nghiep\n- Hoc bong Khuyen khich hoc tap xet theo ket qua hoc tap va diem ren luyen.\n- Qu hoc bong doanh nghiep \\(Vietcombank, VPBank, Agribank\\) trao 50-100 suat hoc bong / nam.\n- Muc ho tro hoc bong doanh nghiep: 10.000.000 VN den 20.000.000 VN / sinh vien.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat."
+        ],
+        "ground_truth": "Chuẩn đầu ra tiếng Anh là TOEIC 500 hoặc IELTS 5.5 trở lên.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieved_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "quy-dinh-hoc-phi-hoc-bong-neu.md",
+          "article_03.md",
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "quy-che-dao-tao-dai-hoc-neu.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 1.93
+      },
+      {
+        "id": "Q10",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Sinh viên HUST bị cảnh báo học tập bao nhiêu lần liên tiếp thì bị buộc thôi học?",
+        "answer": "Sinh viên HUST bị cảnh báo học tập 3 lần liên tiếp thì sẽ bị buộc thôi học [Source: quy-che-dao-tao-dai-hoc-hust.md].",
+        "contexts": [
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc.",
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
+          "## 2. Tiêu chí lựa chọn\n- Nữ sinh viên khóa mới trúng tuyển vào các ngành Kỹ thuật Xây dựng, Cầu đường, Kiến trúc, Môi trường.\n- Gia cảnh khó khăn, có tinh thần vượt khó vươn lên trong học tập.\n\n## 3. Hồ sơ ứng tuyển\nSinh viên chuẩn bị hồ sơ nộp về Phòng Công tác Chính trị & Quản lý sinh viên trước ngày 30/10/2025.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn."
+        ],
+        "ground_truth": "Sinh viên bị cảnh báo học tập 3 lần liên tiếp sẽ bị buộc thôi học.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_02.md",
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "article_01.md",
+          "article_09.md",
+          "article_04.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 1.77
+      },
+      {
+        "id": "Q11",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Những đối tượng nào được xét miễn, giảm học phí tại Đại học Kinh tế Quốc dân?",
+        "answer": "Các đối tượng được xét miễn, giảm học phí tại Đại học Kinh tế Quốc dân bao gồm:\n\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn. [Source: article_04.md]",
+        "contexts": [
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`.",
+          "QUY DINH HOC PHI VA CHINH SACH TRO CAP SINH VIEN - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH QUY DINH HOC PHI VA HOC BONG TAI TRO\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nNam hoc: 2025-2026\n\nPhan 1: Mc thu Hoc phi va Thoi han np\n- Chuong trinh chuan: 18.000.000 VN den 25.000.000 VN / nam hoc.\n- Chuong trinh Chat luong cao, POHE: 45.000.000 VN den 65.000.000 VN / nam hoc.\n- Thoi han nop hoc phi: Trong 4 tuan dau tin cua hoc ky.\n\nPhan 2: Hoc bong Khuyen khich hoc tap va Hoc bong Doanh nghiep\n- Hoc bong Khuyen khich hoc tap xet theo ket qua hoc tap va diem ren luyen.\n- Qu hoc bong doanh nghiep \\(Vietcombank, VPBank, Agribank\\) trao 50-100 suat hoc bong / nam.\n- Muc ho tro hoc bong doanh nghiep: 10.000.000 VN den 20.000.000 VN / sinh vien.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat."
+        ],
+        "ground_truth": "Sinh viên là con thương binh, bệnh binh, người có công với cách mạng; sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng; sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+        "expected_sources": [
+          "article_04.md"
+        ],
+        "retrieved_sources": [
+          "article_04.md",
+          "article_04.md",
+          "article_03.md",
+          "quy-dinh-hoc-phi-hoc-bong-neu.md",
+          "quy-che-dao-tao-dai-hoc-neu.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.23
+      },
+      {
+        "id": "Q12",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Sinh viên NEU nộp hồ sơ miễn giảm học phí ở địa điểm nào và trước thời hạn nào?",
+        "answer": "Sinh viên NEU nộp hồ sơ miễn giảm học phí tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025 [Source: article_04.md].",
+        "contexts": [
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "QUY DINH HOC PHI VA CHINH SACH HOC BONG - DAI HOC XAY DUNG HA NOI \\(HUCE\\)\n\nQUYET DINH MUC THU HOC PHI VA QUY HOC BONG\nTruong: Dai hoc Xay dung Ha Noi \\(HUCE\\)\nQuyet dinh so: 960/QD-DHXDHN\n\nMc 1: Mc thu Hoc phi theo tin chi\n- Mc thu hoc phi trung binh chuong trinh chuan: 18.500.000 VN / nam hoc.\n- Mc thu tin chi hoc phan ly thuyet va thuc hanh theo quy dinh tai Quyt nh 960.\n- Mien giam hoc phi theo Nghi dinh 81/2021/ND-CP va cac quy dinh hien hanh.\n\nMc 2: Chinh sach Hoc bong STEM va Khuyen khich hoc tap\n- Hoc bong Khuyen khich hoc tap duoc trich tu 8% tong thu hoc phi sinh vien.\n- Hc bng STEM Quy Chau A danh cho sinh vien nu cac nganh Ky thuat, Xay dung.\n- Hoc bong Doanh nghiep nganh Xay dung ho tro sinh vien xuat sac va sinh vien vuot kho.",
+          "QUY DINH HOC PHI VA CHINH SACH TRO CAP SINH VIEN - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH QUY DINH HOC PHI VA HOC BONG TAI TRO\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nNam hoc: 2025-2026\n\nPhan 1: Mc thu Hoc phi va Thoi han np\n- Chuong trinh chuan: 18.000.000 VN den 25.000.000 VN / nam hoc.\n- Chuong trinh Chat luong cao, POHE: 45.000.000 VN den 65.000.000 VN / nam hoc.\n- Thoi han nop hoc phi: Trong 4 tuan dau tin cua hoc ky.\n\nPhan 2: Hoc bong Khuyen khich hoc tap va Hoc bong Doanh nghiep\n- Hoc bong Khuyen khich hoc tap xet theo ket qua hoc tap va diem ren luyen.\n- Qu hoc bong doanh nghiep \\(Vietcombank, VPBank, Agribank\\) trao 50-100 suat hoc bong / nam.\n- Muc ho tro hoc bong doanh nghiep: 10.000.000 VN den 20.000.000 VN / sinh vien."
+        ],
+        "ground_truth": "Nộp trực tiếp tại Phòng 102 Nhà A1 Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện, trước ngày 15/10/2025.",
+        "expected_sources": [
+          "article_04.md"
+        ],
+        "retrieved_sources": [
+          "article_04.md",
+          "article_04.md",
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md",
+          "quy-dinh-hoc-phi-hoc-bong-neu.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.05
+      },
+      {
+        "id": "Q13",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Thư viện NEU có bao nhiêu phòng học nhóm và sinh viên đặt phòng bằng cách nào?",
+        "answer": "Thư viện NEU có 20 phòng học nhóm. Sinh viên có thể đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2 [Source: article_05.md].",
+        "contexts": [
+          "# NEU - Khai thác tài nguyên Thư viện số NEU Library và Đăng ký phòng học nhóm cho tân sinh viên\n\n- **Trường:** NEU\n- **Nguồn:** https://thuvien.neu.edu.vn/tin-tuc/khai-thac-tai-nguyen-thu-vien-so-neu-library-va-dang-ky-phong-hoc-nhom\n- **Ngày crawl:** 2026-08-04T10:23:17.432867\n\n---\n\n# Hướng dẫn Khai thác Thư viện số NEU Library và Dịch vụ Phòng tự học\n\nThư viện Đại học Kinh tế Quốc dân (NEU Library) giới thiệu các dịch vụ học liệu và không gian tự học hiện đại phục vụ sinh viên.\n\n## 1. Dịch vụ Thư viện số (Digital Library)\n- Truy cập hơn 50.000 giáo trình, tài liệu tham khảo điện tử qua trang `https://thuvien.neu.edu.vn`.\n- Đăng nhập bằng mã sinh viên và mật khẩu tài khoản trường cấp để tra cứu cơ sở dữ liệu quốc tế (ProQuest, ScienceDirect).",
+          "## 2. Đăng ký Phòng học nhóm và Không gian làm việc chung (Co-working space)\n- Thư viện cung cấp 20 phòng học nhóm trang bị màn hình tương tác và wifi tốc độ cao.\n- Đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2.\n\n## 3. Thời gian mở cửa\n- Từ thứ 2 đến thứ 7: 7h30 - 21h30 hàng ngày.",
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat.",
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần."
+        ],
+        "ground_truth": "Thư viện cung cấp 20 phòng học nhóm trang bị màn hình tương tác và wifi tốc độ cao. Sinh viên đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2.",
+        "expected_sources": [
+          "article_05.md"
+        ],
+        "retrieved_sources": [
+          "article_05.md",
+          "article_05.md",
+          "article_07.md",
+          "quy-che-dao-tao-dai-hoc-neu.md",
+          "article_02.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.32
+      },
+      {
+        "id": "Q14",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Học bổng tài trợ Vietcombank và VPBank tại NEU có bao nhiêu suất và trị giá mỗi suất là bao nhiêu?",
+        "answer": "Học bổng tài trợ Vietcombank tại NEU có 30 suất, trị giá mỗi suất là 15.000.000 VNĐ. Học bổng VPBank Talent có 20 suất, trị giá mỗi suất là 20.000.000 VNĐ kèm cơ hội thực tập ngay năm thứ 3 [Source: article_07.md].",
+        "contexts": [
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "# NEU - Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/ngay-hoi-viec-lam-va-tu-van-tuyen-sinh-neu-open-day-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.433866\n\n---\n\n# Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\nTrường Đại học Kinh tế Quốc dân trân trọng thông báo chuỗi sự kiện NEU Open Day 2026 và Ngày hội Kết nối Doanh nghiệp.\n\n## 1. Nội dung chương trình\n- **Tư vấn hướng nghiệp:** Giao lưu trực tiếp với các Chuyên gia kinh tế và Cựu sinh viên thành đạt.\n- **Gian hàng tuyển dụng:** Hơn 80 doanh nghiệp, tập đoàn lớn (Big4, Vietcombank, VinGroup, Shopee) tham gia phỏng vấn tuyển dụng trực tiếp.\n- **Workshop Kỹ năng:** Hướng dẫn viết CV chuyên nghiệp và kỹ năng phỏng vấn tiếng Anh.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc."
+        ],
+        "ground_truth": "Học bổng Vietcombank có 30 suất, trị giá 15.000.000 VNĐ/suất. Học bổng VPBank Talent có 20 suất, trị giá 20.000.000 VNĐ/suất kèm cơ hội thực tập ngay năm thứ 3.",
+        "expected_sources": [
+          "article_07.md"
+        ],
+        "retrieved_sources": [
+          "article_07.md",
+          "article_04.md",
+          "article_06.md",
+          "quy-che-dao-tao-dai-hoc-neu.md",
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 4.16
+      },
+      {
+        "id": "Q15",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Điều kiện CPA và điểm rèn luyện để ứng tuyển học bổng doanh nghiệp tại NEU là bao nhiêu?",
+        "answer": "Điều kiện CPA để ứng tuyển học bổng doanh nghiệp tại NEU là tích lũy >= 3.20 và điểm rèn luyện >= 80 [Source: article_07.md].",
+        "contexts": [
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
+          "# NEU - Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/ngay-hoi-viec-lam-va-tu-van-tuyen-sinh-neu-open-day-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.433866\n\n---\n\n# Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\nTrường Đại học Kinh tế Quốc dân trân trọng thông báo chuỗi sự kiện NEU Open Day 2026 và Ngày hội Kết nối Doanh nghiệp.\n\n## 1. Nội dung chương trình\n- **Tư vấn hướng nghiệp:** Giao lưu trực tiếp với các Chuyên gia kinh tế và Cựu sinh viên thành đạt.\n- **Gian hàng tuyển dụng:** Hơn 80 doanh nghiệp, tập đoàn lớn (Big4, Vietcombank, VinGroup, Shopee) tham gia phỏng vấn tuyển dụng trực tiếp.\n- **Workshop Kỹ năng:** Hướng dẫn viết CV chuyên nghiệp và kỹ năng phỏng vấn tiếng Anh.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat.",
+          "MUC 2: Chinh sach Hoc bong Khuyen khich Hoc tap \\(KKHT\\)\n- Hoc bong loai A \\(Xuat sac\\): GPA >= 3.6, Diem ren luyen >= 90. Muc hoc bong: 120% hoc phi.\n- Hoc bong loai B \\(Gioi\\): GPA >= 3.2, Diem ren luyen >= 80. Muc hoc bong: 100% hoc phi.\n- Hoc bong loai C \\(Kha\\): GPA >= 2.5, Diem ren luyen >= 65. Muc hoc bong: 50% hoc phi.\n\nMUC 3: Hoc bong Tran Dai Nghia va Hoc bong Nghin cuu sinh\n- Hoc bong Tran Dai Nghia ho tro 50%-100% hoc phi cho sinh vien co hoan canh dac biet kho khan.\n- Nghin cuu sinh tien si trung tuyen duoc cap hoc bong 100% hoc phi."
+        ],
+        "ground_truth": "CPA tích lũy từ 3.20 trở lên và điểm rèn luyện từ 80 trở lên, dành cho sinh viên năm 2 và năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.",
+        "expected_sources": [
+          "article_07.md"
+        ],
+        "retrieved_sources": [
+          "article_07.md",
+          "article_07.md",
+          "article_06.md",
+          "quy-che-dao-tao-dai-hoc-neu.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.28
+      },
+      {
+        "id": "Q16",
+        "school": "NEU",
+        "doc_type": "legal",
+        "question": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là bao nhiêu?",
+        "answer": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là 2.00 [Source: quy-che-dao-tao-dai-hoc-neu.md].",
+        "contexts": [
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat."
+        ],
+        "ground_truth": "Điểm trung bình tích lũy toàn khóa (CPA) phải đạt từ 2.00 trở lên.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-neu.md"
+        ],
+        "retrieved_sources": [
+          "article_04.md",
+          "article_07.md",
+          "article_01.md",
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "quy-che-dao-tao-dai-hoc-neu.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.42
+      },
+      {
+        "id": "Q17",
+        "school": "HUCE",
+        "doc_type": "news",
+        "question": "Mức học phí trung bình của chương trình đại học chuẩn tại Đại học Xây dựng Hà Nội là bao nhiêu một năm?",
+        "answer": "Mức học phí trung bình của chương trình đại học chuẩn tại Đại học Xây dựng Hà Nội là khoảng 18,5 triệu đồng/năm học [Source: article_08.md].",
+        "contexts": [
+          "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "QUY CHE DAO TAO TRINH DO DAI HOC - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO TRINH DO DAI HOC\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nQuyet dinh so: 755/QD-DHKTQD\n\nDieu 1: Thoi gian dao tao va Dang ky hoc tap\n- Chuong trinh dao tao dai hoc chinh quy duoc thiet ke trong 4 nam \\(8 hoc ky chinh\\).\n- Sinh vien dang ky hoc phan qua cong thong tin daotao.neu.edu.vn.\n- So tin chi toi thieu cho moi hoc ky la 14 tin chi \\(tru hoc ky cuoi\\).\n\nDieu 2: Xet va cong nhan tot nghiep\n- Sinh vien tich luy du so tin chi quy dinh trong chuong trinh dao tao.\n- Diem trung binh tich luy toan khoa \\(CPA\\) dat tu 2.00 tro len.\n- Dat chuan dau ra Chuong trinh Tieng Anh va Tin hoc theo quy dinh cua Truong.\n- Khong bi truy cuu trch nhiem hinh su hoac dang trong thoi gian bi ky luat.",
+          "QUY DINH HOC PHI VA CHINH SACH HOC BONG - DAI HOC XAY DUNG HA NOI \\(HUCE\\)\n\nQUYET DINH MUC THU HOC PHI VA QUY HOC BONG\nTruong: Dai hoc Xay dung Ha Noi \\(HUCE\\)\nQuyet dinh so: 960/QD-DHXDHN\n\nMc 1: Mc thu Hoc phi theo tin chi\n- Mc thu hoc phi trung binh chuong trinh chuan: 18.500.000 VN / nam hoc.\n- Mc thu tin chi hoc phan ly thuyet va thuc hanh theo quy dinh tai Quyt nh 960.\n- Mien giam hoc phi theo Nghi dinh 81/2021/ND-CP va cac quy dinh hien hanh.\n\nMc 2: Chinh sach Hoc bong STEM va Khuyen khich hoc tap\n- Hoc bong Khuyen khich hoc tap duoc trich tu 8% tong thu hoc phi sinh vien.\n- Hc bng STEM Quy Chau A danh cho sinh vien nu cac nganh Ky thuat, Xay dung.\n- Hoc bong Doanh nghiep nganh Xay dung ho tro sinh vien xuat sac va sinh vien vuot kho."
+        ],
+        "ground_truth": "Khoảng 18,5 triệu đồng (18.500.000 VNĐ) một năm học cho chương trình đại học chuẩn.",
+        "expected_sources": [
+          "article_08.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieved_sources": [
+          "article_08.md",
+          "article_03.md",
+          "article_04.md",
+          "quy-che-dao-tao-dai-hoc-neu.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.12
+      },
+      {
+        "id": "Q18",
+        "school": "HUCE",
+        "doc_type": "news",
+        "question": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho ai và hỗ trợ những gì?",
+        "answer": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng. Học bổng này hỗ trợ 100% học phí cho toàn bộ khóa học 4,5 năm, cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành. [Source: article_09.md]",
+        "contexts": [
+          "# HUCE - Thông báo Tuyển chọn & Trao học bổng STEM Quỹ Châu Á dành cho sinh viên Nữ ngành Kỹ thuật\n\n- **Trường:** HUCE\n- **Nguồn:** https://ctsv.huce.edu.vn/tin-tuc/thong-bao-tuyen-chon-va-trao-hoc-bong-stem-quy-chau-a-sinh-vien-nu\n- **Ngày crawl:** 2026-08-04T10:23:17.435865\n\n---\n\n# Học bổng STEM Quỹ Châu Á (Asia Foundation) dành cho Sinh viên Nữ HUCE\n\nTrường Đại học Xây dựng Hà Nội phối hợp với Quỹ Châu Á thông báo chương trình Học bổng STEM dành riêng cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng.\n\n## 1. Giá trị học bổng\n- Hỗ trợ **100% học phí** cho toàn bộ khóa học 4,5 năm.\n- Cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "MUC 2: Chinh sach Hoc bong Khuyen khich Hoc tap \\(KKHT\\)\n- Hoc bong loai A \\(Xuat sac\\): GPA >= 3.6, Diem ren luyen >= 90. Muc hoc bong: 120% hoc phi.\n- Hoc bong loai B \\(Gioi\\): GPA >= 3.2, Diem ren luyen >= 80. Muc hoc bong: 100% hoc phi.\n- Hoc bong loai C \\(Kha\\): GPA >= 2.5, Diem ren luyen >= 65. Muc hoc bong: 50% hoc phi.\n\nMUC 3: Hoc bong Tran Dai Nghia va Hoc bong Nghin cuu sinh\n- Hoc bong Tran Dai Nghia ho tro 50%-100% hoc phi cho sinh vien co hoan canh dac biet kho khan.\n- Nghin cuu sinh tien si trung tuyen duoc cap hoc bong 100% hoc phi.",
+          "QUY DINH HOC PHI VA CHINH SACH HOC BONG - DAI HOC XAY DUNG HA NOI \\(HUCE\\)\n\nQUYET DINH MUC THU HOC PHI VA QUY HOC BONG\nTruong: Dai hoc Xay dung Ha Noi \\(HUCE\\)\nQuyet dinh so: 960/QD-DHXDHN\n\nMc 1: Mc thu Hoc phi theo tin chi\n- Mc thu hoc phi trung binh chuong trinh chuan: 18.500.000 VN / nam hoc.\n- Mc thu tin chi hoc phan ly thuyet va thuc hanh theo quy dinh tai Quyt nh 960.\n- Mien giam hoc phi theo Nghi dinh 81/2021/ND-CP va cac quy dinh hien hanh.\n\nMc 2: Chinh sach Hoc bong STEM va Khuyen khich hoc tap\n- Hoc bong Khuyen khich hoc tap duoc trich tu 8% tong thu hoc phi sinh vien.\n- Hc bng STEM Quy Chau A danh cho sinh vien nu cac nganh Ky thuat, Xay dung.\n- Hoc bong Doanh nghiep nganh Xay dung ho tro sinh vien xuat sac va sinh vien vuot kho."
+        ],
+        "ground_truth": "Dành cho nữ sinh viên khóa mới trúng tuyển các ngành Kỹ thuật Xây dựng, Cầu đường, Kiến trúc, Môi trường. Học bổng hỗ trợ 100% học phí toàn bộ khóa học 4,5 năm, kèm trợ cấp sinh hoạt phí, máy tính xách tay và khóa học tiếng Anh giao tiếp chuyên ngành.",
+        "expected_sources": [
+          "article_09.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieved_sources": [
+          "article_09.md",
+          "article_01.md",
+          "article_03.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieval_source": "hybrid",
+        "error": null,
+        "latency_s": 2.78
+      }
+    ],
+    "per_question": [
+      {
+        "id": "Q01",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6273765642,
+        "context_recall": 1.0,
+        "context_precision": 0.8875
+      },
+      {
+        "id": "Q02",
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.6475715591,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q03",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5255903018,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q04",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.533588434,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q05",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7174119351,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q06",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.7067404302,
+        "context_recall": 1.0,
+        "context_precision": 0.9166666666
+      },
+      {
+        "id": "Q07",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6933827359,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q08",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5474663076,
+        "context_recall": 1.0,
+        "context_precision": 0.95
+      },
+      {
+        "id": "Q09",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5109920435,
+        "context_recall": 1.0,
+        "context_precision": 0.7
+      },
+      {
+        "id": "Q10",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.560602338,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q11",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3586191431,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q12",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5541216247,
+        "context_recall": 1.0,
+        "context_precision": 0.95
+      },
+      {
+        "id": "Q13",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5558192892,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q14",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7134310443,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      {
+        "id": "Q15",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6443051145,
+        "context_recall": 1.0,
+        "context_precision": 0.8875
+      },
+      {
+        "id": "Q16",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5175815569,
+        "context_recall": 1.0,
+        "context_precision": 0.5888888889
+      },
+      {
+        "id": "Q17",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5955703274,
+        "context_recall": 1.0,
+        "context_precision": 0.8666666666
+      },
+      {
+        "id": "Q18",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6478533754,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    ]
+  },
+  "B_dense_only": {
+    "label": "Config B — dense-only, không rerank",
+    "scores": {
+      "faithfulness": 0.4354166666666666,
+      "answer_relevancy": 0.3631582378965441,
+      "context_recall": 0.9444444444444444,
+      "context_precision": 0.8791666666380382,
+      "average": 0.6555465039114233
+    },
+    "records": [
+      {
+        "id": "Q01",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Học bổng loại A (Xuất sắc) của Đại học Bách Khoa Hà Nội yêu cầu GPA và điểm rèn luyện tối thiểu bao nhiêu?",
+        "answer": "Học bổng loại A (Xuất sắc) của Đại học Bách Khoa Hà Nội yêu cầu GPA tối thiểu 3.6 và điểm rèn luyện tối thiểu 90 [Source: article_01.md].",
+        "contexts": [
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "MUC 2: Chinh sach Hoc bong Khuyen khich Hoc tap \\(KKHT\\)\n- Hoc bong loai A \\(Xuat sac\\): GPA >= 3.6, Diem ren luyen >= 90. Muc hoc bong: 120% hoc phi.\n- Hoc bong loai B \\(Gioi\\): GPA >= 3.2, Diem ren luyen >= 80. Muc hoc bong: 100% hoc phi.\n- Hoc bong loai C \\(Kha\\): GPA >= 2.5, Diem ren luyen >= 65. Muc hoc bong: 50% hoc phi.\n\nMUC 3: Hoc bong Tran Dai Nghia va Hoc bong Nghin cuu sinh\n- Hoc bong Tran Dai Nghia ho tro 50%-100% hoc phi cho sinh vien co hoan canh dac biet kho khan.\n- Nghin cuu sinh tien si trung tuyen duoc cap hoc bong 100% hoc phi.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025."
+        ],
+        "ground_truth": "Học bổng loại A (Xuất sắc) yêu cầu GPA từ 3.6 trở lên và điểm rèn luyện từ 90 trở lên. Mức cấp là 120% học phí học kỳ.",
+        "expected_sources": [
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md",
+          "article_03.md",
+          "article_07.md",
+          "article_04.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.34
+      },
+      {
+        "id": "Q02",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Học bổng Trần Đại Nghĩa của HUST dành cho đối tượng nào và mức hỗ trợ là bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "# HUCE - Thông báo Tuyển chọn & Trao học bổng STEM Quỹ Châu Á dành cho sinh viên Nữ ngành Kỹ thuật\n\n- **Trường:** HUCE\n- **Nguồn:** https://ctsv.huce.edu.vn/tin-tuc/thong-bao-tuyen-chon-va-trao-hoc-bong-stem-quy-chau-a-sinh-vien-nu\n- **Ngày crawl:** 2026-08-04T10:23:17.435865\n\n---\n\n# Học bổng STEM Quỹ Châu Á (Asia Foundation) dành cho Sinh viên Nữ HUCE\n\nTrường Đại học Xây dựng Hà Nội phối hợp với Quỹ Châu Á thông báo chương trình Học bổng STEM dành riêng cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng.\n\n## 1. Giá trị học bổng\n- Hỗ trợ **100% học phí** cho toàn bộ khóa học 4,5 năm.\n- Cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025."
+        ],
+        "ground_truth": "Dành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất. Mức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.",
+        "expected_sources": [
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_03.md",
+          "article_01.md",
+          "article_02.md",
+          "article_09.md",
+          "article_01.md"
+        ],
+        "retrieval_source": "dense",
+        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 199510, Requested 1349. Please try again in 257ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
+        "latency_s": 1.73
+      },
+      {
+        "id": "Q03",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Sinh viên HUST nộp hồ sơ xét học bổng khuyến khích học tập học kỳ 1 trước ngày nào và qua cổng nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường."
+        ],
+        "ground_truth": "Sinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại https://ctt.hust.edu.vn trước ngày 28/11/2025.",
+        "expected_sources": [
+          "article_01.md"
+        ],
+        "retrieved_sources": [
+          "article_01.md",
+          "article_01.md",
+          "article_03.md",
+          "article_04.md",
+          "article_02.md"
+        ],
+        "retrieval_source": "dense",
+        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 199358, Requested 1261. Please try again in 185ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
+        "latency_s": 1.67
+      },
+      {
+        "id": "Q04",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Mỗi học kỳ chính sinh viên Bách Khoa Hà Nội được đăng ký tối thiểu và tối đa bao nhiêu tín chỉ?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "## 2. Lịch nộp học phí\n- Đợt 1 (Học kỳ Thu): Nộp từ ngày 01/09/2025 đến ngày 15/10/2025.\n- Đợt 2 (Học kỳ Xuân): Nộp từ ngày 01/02/2026 đến ngày 15/03/2026.\n\n## 3. Cổng thanh toán\nSinh viên thực hiện thanh toán qua Cổng thông tin đào tạo `https://daotao.huce.edu.vn` hoặc ứng dụng ngân hàng đối tác.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`."
+        ],
+        "ground_truth": "Tối thiểu 12 tín chỉ và tối đa 24 tín chỉ mỗi học kỳ chính. Sinh viên bị cảnh báo học tập mức 1 chỉ được đăng ký tối đa 14 tín chỉ.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "article_02.md"
+        ],
+        "retrieved_sources": [
+          "article_01.md",
+          "article_02.md",
+          "article_02.md",
+          "article_08.md",
+          "article_03.md"
+        ],
+        "retrieval_source": "dense",
+        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 199344, Requested 1127. Please try again in 141ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
+        "latency_s": 1.92
+      },
+      {
+        "id": "Q05",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Sinh viên HUST có thể thanh toán học phí trực tuyến bằng những phương thức nào?",
+        "answer": "Sinh viên HUST có thể thanh toán học phí trực tuyến bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`) [Source: article_02.md].",
+        "contexts": [
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "## 2. Lịch nộp học phí\n- Đợt 1 (Học kỳ Thu): Nộp từ ngày 01/09/2025 đến ngày 15/10/2025.\n- Đợt 2 (Học kỳ Xuân): Nộp từ ngày 01/02/2026 đến ngày 15/03/2026.\n\n## 3. Cổng thanh toán\nSinh viên thực hiện thanh toán qua Cổng thông tin đào tạo `https://daotao.huce.edu.vn` hoặc ứng dụng ngân hàng đối tác."
+        ],
+        "ground_truth": "Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS có tích hợp VNPAY hoặc Momo, hoặc chuyển khoản ngân hàng qua mã định danh sinh viên theo dạng HUST + MSSV.",
+        "expected_sources": [
+          "article_02.md"
+        ],
+        "retrieved_sources": [
+          "article_02.md",
+          "article_02.md",
+          "article_01.md",
+          "article_03.md",
+          "article_08.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.17
+      },
+      {
+        "id": "Q06",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Chuyện gì xảy ra nếu sinh viên HUST không hoàn tất nghĩa vụ học phí đúng hạn?",
+        "answer": "Nếu sinh viên HUST không hoàn tất nghĩa vụ học phí đúng hạn, họ sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần. [Source: article_02.md]",
+        "contexts": [
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường."
+        ],
+        "ground_truth": "Sinh viên sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+        "expected_sources": [
+          "article_02.md"
+        ],
+        "retrieved_sources": [
+          "article_02.md",
+          "article_01.md",
+          "article_03.md",
+          "article_03.md",
+          "article_02.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.76
+      },
+      {
+        "id": "Q07",
+        "school": "HUST",
+        "doc_type": "news",
+        "question": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí và sinh hoạt phí ở mức nào?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Lịch nộp học phí\n- Đợt 1 (Học kỳ Thu): Nộp từ ngày 01/09/2025 đến ngày 15/10/2025.\n- Đợt 2 (Học kỳ Xuân): Nộp từ ngày 01/02/2026 đến ngày 15/03/2026.\n\n## 3. Cổng thanh toán\nSinh viên thực hiện thanh toán qua Cổng thông tin đào tạo `https://daotao.huce.edu.vn` hoặc ứng dụng ngân hàng đối tác.",
+          "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025."
+        ],
+        "ground_truth": "Hỗ trợ học phí toàn phần 100% chương trình đào tạo và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng.",
+        "expected_sources": [
+          "article_03.md"
+        ],
+        "retrieved_sources": [
+          "article_03.md",
+          "article_04.md",
+          "article_08.md",
+          "article_08.md",
+          "article_01.md"
+        ],
+        "retrieval_source": "dense",
+        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 200000, Requested 1292. Please try again in 387ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
+        "latency_s": 1.74
+      },
+      {
+        "id": "Q08",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Học phí một năm của chương trình chuẩn và chương trình ELITECH tại HUST là bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
+          "# HUCE - Thông báo Tuyển chọn & Trao học bổng STEM Quỹ Châu Á dành cho sinh viên Nữ ngành Kỹ thuật\n\n- **Trường:** HUCE\n- **Nguồn:** https://ctsv.huce.edu.vn/tin-tuc/thong-bao-tuyen-chon-va-trao-hoc-bong-stem-quy-chau-a-sinh-vien-nu\n- **Ngày crawl:** 2026-08-04T10:23:17.435865\n\n---\n\n# Học bổng STEM Quỹ Châu Á (Asia Foundation) dành cho Sinh viên Nữ HUCE\n\nTrường Đại học Xây dựng Hà Nội phối hợp với Quỹ Châu Á thông báo chương trình Học bổng STEM dành riêng cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng.\n\n## 1. Giá trị học bổng\n- Hỗ trợ **100% học phí** cho toàn bộ khóa học 4,5 năm.\n- Cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành."
+        ],
+        "ground_truth": "Chương trình chuẩn từ 28.000.000 đến 35.000.000 VNĐ/năm học. Chương trình ELITECH và tiên tiến từ 45.000.000 đến 67.000.000 VNĐ/năm học.",
+        "expected_sources": [
+          "quy-dinh-hoc-phi-hoc-bong-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_03.md",
+          "article_01.md",
+          "article_09.md",
+          "article_02.md",
+          "article_08.md"
+        ],
+        "retrieval_source": "dense",
+        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 200000, Requested 1312. Please try again in 393ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
+        "latency_s": 1.54
+      },
+      {
+        "id": "Q09",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Chuẩn đầu ra tiếng Anh của sinh viên đại học chính quy Bách Khoa Hà Nội là gì?",
+        "answer": "Chuẩn đầu ra tiếng Anh cho sinh viên đại học chính quy Bách Khoa Hà Nội là TOEIC 500 hoặc IELTS 5.5 trở lên. [Source: quy-che-dao-tao-dai-hoc-hust.md]",
+        "contexts": [
+          "Chieu 3: Chuan dau ra Ngoai ngu va Tin hoc\n- Chuan dau ra Tieng Anh cho sinh vien dai hoc chinh quy: TOEIC 500 hoac IELTS 5.5 tr len.\n- Chuan dau ra Tin hoc: Chung chi tin hoc van phong IC3 hoac MOS.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "QUY DINH HOC PHI VA CHINH SACH TRO CAP SINH VIEN - DAI HOC KINH TE QUOC DAN \\(NEU\\)\n\nQUYET DINH QUY DINH HOC PHI VA HOC BONG TAI TRO\nTruong: Dai hoc Kinh te Quoc dan \\(NEU\\)\nNam hoc: 2025-2026\n\nPhan 1: Mc thu Hoc phi va Thoi han np\n- Chuong trinh chuan: 18.000.000 VN den 25.000.000 VN / nam hoc.\n- Chuong trinh Chat luong cao, POHE: 45.000.000 VN den 65.000.000 VN / nam hoc.\n- Thoi han nop hoc phi: Trong 4 tuan dau tin cua hoc ky.\n\nPhan 2: Hoc bong Khuyen khich hoc tap va Hoc bong Doanh nghiep\n- Hoc bong Khuyen khich hoc tap xet theo ket qua hoc tap va diem ren luyen.\n- Qu hoc bong doanh nghiep \\(Vietcombank, VPBank, Agribank\\) trao 50-100 suat hoc bong / nam.\n- Muc ho tro hoc bong doanh nghiep: 10.000.000 VN den 20.000.000 VN / sinh vien.",
+          "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`."
+        ],
+        "ground_truth": "Chuẩn đầu ra tiếng Anh là TOEIC 500 hoặc IELTS 5.5 trở lên.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieved_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md",
+          "article_01.md",
+          "quy-dinh-hoc-phi-hoc-bong-neu.md",
+          "article_07.md",
+          "article_03.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.09
+      },
+      {
+        "id": "Q10",
+        "school": "HUST",
+        "doc_type": "legal",
+        "question": "Sinh viên HUST bị cảnh báo học tập bao nhiêu lần liên tiếp thì bị buộc thôi học?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`.",
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026."
+        ],
+        "ground_truth": "Sinh viên bị cảnh báo học tập 3 lần liên tiếp sẽ bị buộc thôi học.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-hust.md"
+        ],
+        "retrieved_sources": [
+          "article_03.md",
+          "article_02.md",
+          "article_03.md",
+          "article_02.md",
+          "article_01.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 1.81
+      },
+      {
+        "id": "Q11",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Những đối tượng nào được xét miễn, giảm học phí tại Đại học Kinh tế Quốc dân?",
+        "answer": "Các đối tượng được xét miễn, giảm học phí tại Đại học Kinh tế Quốc dân bao gồm:\n\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn. [Source: article_04.md]",
+        "contexts": [
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Đối tượng thụ hưởng\n- Thí sinh trúng tuyển ngành Thiết kế Vi mạch, Công nghệ Bán dẫn, Vật liệu tiên tiến đạt điểm đầu vào thuộc top 30% xuất sắc.\n- Sinh viên có giải thưởng Học sinh giỏi Quốc gia hoặc Quốc tế các môn Toán, Lý, Hóa, Tin học.\n\n## 3. Đăng ký xét duyệt\nSinh viên làm theo hướng dẫn gửi về Ban Công tác Sinh viên (Phòng C1-202A) hoặc truy cập `https://hust.edu.vn`.",
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025."
+        ],
+        "ground_truth": "Sinh viên là con thương binh, bệnh binh, người có công với cách mạng; sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng; sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+        "expected_sources": [
+          "article_04.md"
+        ],
+        "retrieved_sources": [
+          "article_04.md",
+          "article_03.md",
+          "article_02.md",
+          "article_04.md",
+          "article_01.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.86
+      },
+      {
+        "id": "Q12",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Sinh viên NEU nộp hồ sơ miễn giảm học phí ở địa điểm nào và trước thời hạn nào?",
+        "answer": "Sinh viên NEU nộp hồ sơ miễn giảm học phí tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025 [Source: article_04.md].",
+        "contexts": [
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Lịch nộp học phí\n- Đợt 1 (Học kỳ Thu): Nộp từ ngày 01/09/2025 đến ngày 15/10/2025.\n- Đợt 2 (Học kỳ Xuân): Nộp từ ngày 01/02/2026 đến ngày 15/03/2026.\n\n## 3. Cổng thanh toán\nSinh viên thực hiện thanh toán qua Cổng thông tin đào tạo `https://daotao.huce.edu.vn` hoặc ứng dụng ngân hàng đối tác.",
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "## 2. Hồ sơ yêu cầu\n- Đơn đề nghị miễn giảm học phí (theo mẫu của Nhà trường).\n- Bản sao chứng thực giấy tờ ưu tiên (Sổ hộ nghèo, Giấy xác nhận khuyết tật, Giấy chứng nhận gia đình chính sách).\n\n## 3. Địa điểm nộp hồ sơ\nNộp trực tiếp tại Phòng 102 Nhà A1 - Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện trước ngày 15/10/2025."
+        ],
+        "ground_truth": "Nộp trực tiếp tại Phòng 102 Nhà A1 Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện, trước ngày 15/10/2025.",
+        "expected_sources": [
+          "article_04.md"
+        ],
+        "retrieved_sources": [
+          "article_04.md",
+          "article_08.md",
+          "article_07.md",
+          "article_01.md",
+          "article_04.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 1.99
+      },
+      {
+        "id": "Q13",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Thư viện NEU có bao nhiêu phòng học nhóm và sinh viên đặt phòng bằng cách nào?",
+        "answer": "Thư viện NEU cung cấp 20 phòng học nhóm. Sinh viên có thể đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2 [Source: article_05.md].",
+        "contexts": [
+          "# NEU - Khai thác tài nguyên Thư viện số NEU Library và Đăng ký phòng học nhóm cho tân sinh viên\n\n- **Trường:** NEU\n- **Nguồn:** https://thuvien.neu.edu.vn/tin-tuc/khai-thac-tai-nguyen-thu-vien-so-neu-library-va-dang-ky-phong-hoc-nhom\n- **Ngày crawl:** 2026-08-04T10:23:17.432867\n\n---\n\n# Hướng dẫn Khai thác Thư viện số NEU Library và Dịch vụ Phòng tự học\n\nThư viện Đại học Kinh tế Quốc dân (NEU Library) giới thiệu các dịch vụ học liệu và không gian tự học hiện đại phục vụ sinh viên.\n\n## 1. Dịch vụ Thư viện số (Digital Library)\n- Truy cập hơn 50.000 giáo trình, tài liệu tham khảo điện tử qua trang `https://thuvien.neu.edu.vn`.\n- Đăng nhập bằng mã sinh viên và mật khẩu tài khoản trường cấp để tra cứu cơ sở dữ liệu quốc tế (ProQuest, ScienceDirect).",
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "# NEU - Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/ngay-hoi-viec-lam-va-tu-van-tuyen-sinh-neu-open-day-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.433866\n\n---\n\n# Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\nTrường Đại học Kinh tế Quốc dân trân trọng thông báo chuỗi sự kiện NEU Open Day 2026 và Ngày hội Kết nối Doanh nghiệp.\n\n## 1. Nội dung chương trình\n- **Tư vấn hướng nghiệp:** Giao lưu trực tiếp với các Chuyên gia kinh tế và Cựu sinh viên thành đạt.\n- **Gian hàng tuyển dụng:** Hơn 80 doanh nghiệp, tập đoàn lớn (Big4, Vietcombank, VinGroup, Shopee) tham gia phỏng vấn tuyển dụng trực tiếp.\n- **Workshop Kỹ năng:** Hướng dẫn viết CV chuyên nghiệp và kỹ năng phỏng vấn tiếng Anh.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Đăng ký Phòng học nhóm và Không gian làm việc chung (Co-working space)\n- Thư viện cung cấp 20 phòng học nhóm trang bị màn hình tương tác và wifi tốc độ cao.\n- Đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2.\n\n## 3. Thời gian mở cửa\n- Từ thứ 2 đến thứ 7: 7h30 - 21h30 hàng ngày."
+        ],
+        "ground_truth": "Thư viện cung cấp 20 phòng học nhóm trang bị màn hình tương tác và wifi tốc độ cao. Sinh viên đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2.",
+        "expected_sources": [
+          "article_05.md"
+        ],
+        "retrieved_sources": [
+          "article_05.md",
+          "article_07.md",
+          "article_06.md",
+          "article_04.md",
+          "article_05.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.55
+      },
+      {
+        "id": "Q14",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Học bổng tài trợ Vietcombank và VPBank tại NEU có bao nhiêu suất và trị giá mỗi suất là bao nhiêu?",
+        "answer": "Học bổng tài trợ Vietcombank có 30 suất, trị giá mỗi suất là 15.000.000 VNĐ. Học bổng VPBank Talent có 20 suất, trị giá mỗi suất là 20.000.000 VNĐ kèm cơ hội thực tập ngay năm thứ 3 [Source: article_07.md].",
+        "contexts": [
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# NEU - Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/ngay-hoi-viec-lam-va-tu-van-tuyen-sinh-neu-open-day-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.433866\n\n---\n\n# Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\nTrường Đại học Kinh tế Quốc dân trân trọng thông báo chuỗi sự kiện NEU Open Day 2026 và Ngày hội Kết nối Doanh nghiệp.\n\n## 1. Nội dung chương trình\n- **Tư vấn hướng nghiệp:** Giao lưu trực tiếp với các Chuyên gia kinh tế và Cựu sinh viên thành đạt.\n- **Gian hàng tuyển dụng:** Hơn 80 doanh nghiệp, tập đoàn lớn (Big4, Vietcombank, VinGroup, Shopee) tham gia phỏng vấn tuyển dụng trực tiếp.\n- **Workshop Kỹ năng:** Hướng dẫn viết CV chuyên nghiệp và kỹ năng phỏng vấn tiếng Anh.",
+          "# NEU - Khai thác tài nguyên Thư viện số NEU Library và Đăng ký phòng học nhóm cho tân sinh viên\n\n- **Trường:** NEU\n- **Nguồn:** https://thuvien.neu.edu.vn/tin-tuc/khai-thac-tai-nguyen-thu-vien-so-neu-library-va-dang-ky-phong-hoc-nhom\n- **Ngày crawl:** 2026-08-04T10:23:17.432867\n\n---\n\n# Hướng dẫn Khai thác Thư viện số NEU Library và Dịch vụ Phòng tự học\n\nThư viện Đại học Kinh tế Quốc dân (NEU Library) giới thiệu các dịch vụ học liệu và không gian tự học hiện đại phục vụ sinh viên.\n\n## 1. Dịch vụ Thư viện số (Digital Library)\n- Truy cập hơn 50.000 giáo trình, tài liệu tham khảo điện tử qua trang `https://thuvien.neu.edu.vn`.\n- Đăng nhập bằng mã sinh viên và mật khẩu tài khoản trường cấp để tra cứu cơ sở dữ liệu quốc tế (ProQuest, ScienceDirect).",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn."
+        ],
+        "ground_truth": "Học bổng Vietcombank có 30 suất, trị giá 15.000.000 VNĐ/suất. Học bổng VPBank Talent có 20 suất, trị giá 20.000.000 VNĐ/suất kèm cơ hội thực tập ngay năm thứ 3.",
+        "expected_sources": [
+          "article_07.md"
+        ],
+        "retrieved_sources": [
+          "article_07.md",
+          "article_01.md",
+          "article_06.md",
+          "article_05.md",
+          "article_04.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 3.3
+      },
+      {
+        "id": "Q15",
+        "school": "NEU",
+        "doc_type": "news",
+        "question": "Điều kiện CPA và điểm rèn luyện để ứng tuyển học bổng doanh nghiệp tại NEU là bao nhiêu?",
+        "answer": "Điều kiện CPA để ứng tuyển học bổng doanh nghiệp tại NEU là tích lũy >= 3.20 và điểm rèn luyện >= 80 [Source: article_07.md].",
+        "contexts": [
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "# NEU - Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/ngay-hoi-viec-lam-va-tu-van-tuyen-sinh-neu-open-day-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.433866\n\n---\n\n# Ngày hội Việc làm & Tư vấn Tuyển sinh NEU Open Day 2026\n\nTrường Đại học Kinh tế Quốc dân trân trọng thông báo chuỗi sự kiện NEU Open Day 2026 và Ngày hội Kết nối Doanh nghiệp.\n\n## 1. Nội dung chương trình\n- **Tư vấn hướng nghiệp:** Giao lưu trực tiếp với các Chuyên gia kinh tế và Cựu sinh viên thành đạt.\n- **Gian hàng tuyển dụng:** Hơn 80 doanh nghiệp, tập đoàn lớn (Big4, Vietcombank, VinGroup, Shopee) tham gia phỏng vấn tuyển dụng trực tiếp.\n- **Workshop Kỹ năng:** Hướng dẫn viết CV chuyên nghiệp và kỹ năng phỏng vấn tiếng Anh.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+          "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH."
+        ],
+        "ground_truth": "CPA tích lũy từ 3.20 trở lên và điểm rèn luyện từ 80 trở lên, dành cho sinh viên năm 2 và năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.",
+        "expected_sources": [
+          "article_07.md"
+        ],
+        "retrieved_sources": [
+          "article_07.md",
+          "article_06.md",
+          "article_01.md",
+          "article_04.md",
+          "article_07.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.45
+      },
+      {
+        "id": "Q16",
+        "school": "NEU",
+        "doc_type": "legal",
+        "question": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là bao nhiêu?",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
+          "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
+          "# NEU - Khai thác tài nguyên Thư viện số NEU Library và Đăng ký phòng học nhóm cho tân sinh viên\n\n- **Trường:** NEU\n- **Nguồn:** https://thuvien.neu.edu.vn/tin-tuc/khai-thac-tai-nguyen-thu-vien-so-neu-library-va-dang-ky-phong-hoc-nhom\n- **Ngày crawl:** 2026-08-04T10:23:17.432867\n\n---\n\n# Hướng dẫn Khai thác Thư viện số NEU Library và Dịch vụ Phòng tự học\n\nThư viện Đại học Kinh tế Quốc dân (NEU Library) giới thiệu các dịch vụ học liệu và không gian tự học hiện đại phục vụ sinh viên.\n\n## 1. Dịch vụ Thư viện số (Digital Library)\n- Truy cập hơn 50.000 giáo trình, tài liệu tham khảo điện tử qua trang `https://thuvien.neu.edu.vn`.\n- Đăng nhập bằng mã sinh viên và mật khẩu tài khoản trường cấp để tra cứu cơ sở dữ liệu quốc tế (ProQuest, ScienceDirect).",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn."
+        ],
+        "ground_truth": "Điểm trung bình tích lũy toàn khóa (CPA) phải đạt từ 2.00 trở lên.",
+        "expected_sources": [
+          "quy-che-dao-tao-dai-hoc-neu.md"
+        ],
+        "retrieved_sources": [
+          "article_07.md",
+          "article_07.md",
+          "article_05.md",
+          "article_01.md",
+          "article_04.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 1.82
+      },
+      {
+        "id": "Q17",
+        "school": "HUCE",
+        "doc_type": "news",
+        "question": "Mức học phí trung bình của chương trình đại học chuẩn tại Đại học Xây dựng Hà Nội là bao nhiêu một năm?",
+        "answer": "Mức học phí trung bình của chương trình đại học chuẩn tại Đại học Xây dựng Hà Nội là khoảng 18,5 triệu đồng/năm học. [Source: article_08.md]",
+        "contexts": [
+          "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành.",
+          "## 2. Lịch nộp học phí\n- Đợt 1 (Học kỳ Thu): Nộp từ ngày 01/09/2025 đến ngày 15/10/2025.\n- Đợt 2 (Học kỳ Xuân): Nộp từ ngày 01/02/2026 đến ngày 15/03/2026.\n\n## 3. Cổng thanh toán\nSinh viên thực hiện thanh toán qua Cổng thông tin đào tạo `https://daotao.huce.edu.vn` hoặc ứng dụng ngân hàng đối tác.",
+          "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**."
+        ],
+        "ground_truth": "Khoảng 18,5 triệu đồng (18.500.000 VNĐ) một năm học cho chương trình đại học chuẩn.",
+        "expected_sources": [
+          "article_08.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieved_sources": [
+          "article_08.md",
+          "article_08.md",
+          "article_02.md",
+          "article_01.md",
+          "article_03.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.51
+      },
+      {
+        "id": "Q18",
+        "school": "HUCE",
+        "doc_type": "news",
+        "question": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho ai và hỗ trợ những gì?",
+        "answer": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng. Học bổng này hỗ trợ 100% học phí cho toàn bộ khóa học 4,5 năm, cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành. [Source: article_09.md]",
+        "contexts": [
+          "# HUCE - Thông báo Tuyển chọn & Trao học bổng STEM Quỹ Châu Á dành cho sinh viên Nữ ngành Kỹ thuật\n\n- **Trường:** HUCE\n- **Nguồn:** https://ctsv.huce.edu.vn/tin-tuc/thong-bao-tuyen-chon-va-trao-hoc-bong-stem-quy-chau-a-sinh-vien-nu\n- **Ngày crawl:** 2026-08-04T10:23:17.435865\n\n---\n\n# Học bổng STEM Quỹ Châu Á (Asia Foundation) dành cho Sinh viên Nữ HUCE\n\nTrường Đại học Xây dựng Hà Nội phối hợp với Quỹ Châu Á thông báo chương trình Học bổng STEM dành riêng cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng.\n\n## 1. Giá trị học bổng\n- Hỗ trợ **100% học phí** cho toàn bộ khóa học 4,5 năm.\n- Cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành.",
+          "# HUCE - Hoạt động Thư viện HUCE & Cuộc thi Nghiên cứu Khoa học Sinh viên HUCE-Intech\n\n- **Trường:** HUCE\n- **Nguồn:** https://thuvien.huce.edu.vn/tin-tuc/hoat-dong-thu-vien-huce-va-cuoc-thi-nghien-cuu-khoa-hoc-sinh-vien-huce-intech\n- **Ngày crawl:** 2026-08-04T10:23:17.436877\n\n---\n\n# Hoạt động Thư viện HUCE & Phát động Cuộc thi NCKH Sinh viên HUCE-Intech 2026\n\nThư viện và Ban Khai thác Nghiên cứu Khoa học Trường Đại học Xây dựng Hà Nội tổ chức chuỗi hoạt động học thuật cho sinh viên.\n\n## 1. Dịch vụ Thư viện HUCE\n- Thư viện cung cấp bộ học liệu chuyên ngành Đô thị, Kiến trúc, Xây dựng dân dụng và Công nghiệp.\n- Mở rộng phòng đọc tự học đến 22h00 hàng ngày trong các tuần thi cao điểm.",
+          "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành.",
+          "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
+          "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025."
+        ],
+        "ground_truth": "Dành cho nữ sinh viên khóa mới trúng tuyển các ngành Kỹ thuật Xây dựng, Cầu đường, Kiến trúc, Môi trường. Học bổng hỗ trợ 100% học phí toàn bộ khóa học 4,5 năm, kèm trợ cấp sinh hoạt phí, máy tính xách tay và khóa học tiếng Anh giao tiếp chuyên ngành.",
+        "expected_sources": [
+          "article_09.md",
+          "quy-dinh-hoc-phi-hoc-bong-huce.md"
+        ],
+        "retrieved_sources": [
+          "article_09.md",
+          "article_10.md",
+          "article_08.md",
+          "article_03.md",
+          "article_01.md"
+        ],
+        "retrieval_source": "dense",
+        "error": null,
+        "latency_s": 2.6
+      }
+    ],
+    "per_question": [
+      {
+        "id": "Q01",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6264451649,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q02",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q03",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q04",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.8666666666
+      },
+      {
+        "id": "Q05",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.717419044,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q06",
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.7067393337,
+        "context_recall": 1.0,
+        "context_precision": null
+      },
+      {
+        "id": "Q07",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.8041666666
+      },
+      {
+        "id": "Q08",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 0.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q09",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.5109920435,
+        "context_recall": 1.0,
+        "context_precision": 0.7
+      },
+      {
+        "id": "Q10",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": null
+      },
+      {
+        "id": "Q11",
+        "faithfulness": null,
+        "answer_relevancy": 0.3587037607,
+        "context_recall": 1.0,
+        "context_precision": 0.8875
+      },
+      {
+        "id": "Q12",
+        "faithfulness": 0.6666666667,
+        "answer_relevancy": 0.5449942072,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      },
+      {
+        "id": "Q13",
+        "faithfulness": null,
+        "answer_relevancy": 0.5558192892,
+        "context_recall": 1.0,
+        "context_precision": 0.8041666666
+      },
+      {
+        "id": "Q14",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6528655173,
+        "context_recall": 1.0,
+        "context_precision": 0.9999999999
+      },
+      {
+        "id": "Q15",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6265883303,
+        "context_recall": 1.0,
+        "context_precision": 0.8041666666
+      },
+      {
+        "id": "Q16",
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.0,
+        "context_recall": 1.0,
+        "context_precision": 0.5
+      },
+      {
+        "id": "Q17",
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.588428216,
+        "context_recall": 1.0,
+        "context_precision": 0.7
+      },
+      {
+        "id": "Q18",
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.6478533754,
+        "context_recall": 1.0,
+        "context_precision": 1.0
+      }
+    ]
+  },
+  "guardrail_probes": [
+    {
+      "question": "Học phí ngành Y khoa của Đại học Y Hà Nội năm 2026 là bao nhiêu?",
+      "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "refused": true,
+      "error": null
+    },
+    {
+      "question": "Tỷ giá đồng yên Nhật hôm nay là bao nhiêu?",
+      "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+      "refused": true,
+      "error": null
+    }
+  ]
+}
