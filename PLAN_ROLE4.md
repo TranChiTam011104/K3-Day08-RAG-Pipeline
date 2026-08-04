@@ -8,6 +8,25 @@
 
 ---
 
+## ✅ TIẾN ĐỘ — Phase 0, 1, 2 ĐÃ HOÀN THÀNH
+
+| Phase | Nội dung | Kết quả |
+| :-- | :--- | :--- |
+| **0** | Môi trường + Task 7 + smoke script | ✅ `.venv` (Python 3.11.9) đã cài đủ package; `src/task7_reranking.py` xong (RRF + MMR + cross-encoder), **3/3 test passed**; `dev/smoke_role4.py`; `dev/HANDOFF_ROLE4.md` |
+| **1** | Task 6 trên dữ liệu thật | ✅ `src/task6_lexical_search.py` xong (BM25 + TF-IDF + fold-tokenizer). Đã verify trên corpus thật: **44 chunk**, query có dấu và không dấu cho **kết quả giống hệt nhau** và chạm được **cả legal lẫn news** → lỗi lệch dấu (mục 1.1) đã vá |
+| **2** | Task 8 PageIndex | ✅ `src/task8_pageindex_vectorless.py` xong (upload + poll + parse + cache doc_id). API key verify OK. ⚠️ **Chưa upload được** vì PDF nguồn đã bị xoá |
+
+**Test hiện tại:** `TestTask6` 1 passed / 3 skipped · `TestTask7` 3/3 passed · `TestTask8` 2/2 passed.
+3 test skip của Task 6 là do **corpus rỗng**, không phải code lỗi.
+
+> ### 🔴 SỰ CỐ: dữ liệu Task 1/2/3 đã bị xoá lúc ~11:10
+> Toàn bộ 6 PDF + 10 JSON + 16 file `.md` biến mất khỏi `data/`, chỉ còn `.gitkeep`. Đã quét
+> toàn bộ cây `LabDay08` — file bị xoá hẳn chứ không bị di chuyển. Repo không có `.git` nên
+> không khôi phục được. **Cần Role 2 chạy lại Task 1/2/3, và nhóm nên `git init` ngay.**
+> Chi tiết + 3 việc cần các role khác xử lý: xem `dev/HANDOFF_ROLE4.md`.
+
+---
+
 ## 0. Trạng thái repo (đã kiểm tra lại)
 
 | Hạng mục | Trạng thái | Ảnh hưởng tới Role 4 |
