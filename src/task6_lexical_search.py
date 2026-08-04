@@ -112,6 +112,7 @@ CORPUS: list[dict] = []          # List of {'content': str, 'metadata': dict}
 _BM25 = None                     # cache index BM25
 _TFIDF = None                    # cache (vectorizer, matrix)
 _CORPUS_SOURCE = "chưa nạp"      # tầng nào đang được dùng — hiển thị khi debug
+_WARNED_EMPTY = False            # chỉ cảnh báo "corpus rỗng" một lần cho mỗi process
 
 
 def _school_from_name(name: str) -> str:
@@ -252,7 +253,13 @@ def load_corpus(force: bool = False) -> list[dict]:
             return CORPUS
 
     CORPUS, _CORPUS_SOURCE = [], "KHÔNG CÓ DỮ LIỆU"
-    print("  ⚠ Task 6: không tìm thấy corpus (chroma_db/ lẫn data/standardized/ đều trống)")
+    # Chỉ cảnh báo 1 lần: corpus rỗng nên cache không "dính", mọi lời gọi sau đều
+    # chạy lại resolver — không chặn log thì mỗi truy vấn in thêm 1 dòng rác.
+    global _WARNED_EMPTY
+    if not _WARNED_EMPTY:
+        _WARNED_EMPTY = True
+        print("  ⚠ Task 6: không tìm thấy corpus "
+              "(chroma_db/ lẫn data/standardized/ đều trống)")
     return CORPUS
 
 
