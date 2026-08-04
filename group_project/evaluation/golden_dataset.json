@@ -1,17 +1,164 @@
 [
   {
-    "question": "Học phí hàng năm của chương trình Business tại RMIT Vietnam là bao nhiêu?",
-    "expected_answer": "Khoảng 375.840.000 VND mỗi năm (tùy chương trình cụ thể).",
-    "expected_context": "Trang Tuition Fees, mục Undergraduate Programs"
+    "id": "Q01",
+    "school": "HUST",
+    "doc_type": "news",
+    "question": "Học bổng loại A (Xuất sắc) của Đại học Bách Khoa Hà Nội yêu cầu GPA và điểm rèn luyện tối thiểu bao nhiêu?",
+    "expected_answer": "Học bổng loại A (Xuất sắc) yêu cầu GPA từ 3.6 trở lên và điểm rèn luyện từ 90 trở lên. Mức cấp là 120% học phí học kỳ.",
+    "expected_context": "Thông báo xét cấp Học bổng KKHT HUST, mục 1 'Đối tượng và Điều kiện xét Học bổng KKHT'; đối chiếu Quy định học phí học bổng HUST, MUC 2.",
+    "expected_sources": ["article_01.md", "quy-dinh-hoc-phi-hoc-bong-hust.md"]
   },
   {
-    "question": "Học phí được thanh toán theo hình thức nào?",
-    "expected_answer": "Thanh toán theo từng học kỳ, tính theo từng môn học đã đăng ký.",
-    "expected_context": "Trang Tuition Fees, mục Payment Structure"
+    "id": "Q02",
+    "school": "HUST",
+    "doc_type": "news",
+    "question": "Học bổng Trần Đại Nghĩa của HUST dành cho đối tượng nào và mức hỗ trợ là bao nhiêu?",
+    "expected_answer": "Dành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất. Mức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.",
+    "expected_context": "Thông báo xét cấp Học bổng KKHT HUST, mục 2 'Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa'; đối chiếu Quy định học phí học bổng HUST, MUC 3.",
+    "expected_sources": ["article_01.md", "quy-dinh-hoc-phi-hoc-bong-hust.md"]
   },
   {
-    "question": "Trường có cung cấp ký túc xá trong khuôn viên không?",
-    "expected_answer": "Không — trường không cung cấp chỗ ở trong khuôn viên, nhưng có đội ngũ hỗ trợ sinh viên tìm chỗ ở gần trường.",
-    "expected_context": "Trang Accommodation Services"
+    "id": "Q03",
+    "school": "HUST",
+    "doc_type": "news",
+    "question": "Sinh viên HUST nộp hồ sơ xét học bổng khuyến khích học tập học kỳ 1 trước ngày nào và qua cổng nào?",
+    "expected_answer": "Sinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại https://ctt.hust.edu.vn trước ngày 28/11/2025.",
+    "expected_context": "Thông báo xét cấp Học bổng KKHT HUST, mục 3 'Thời gian và Cổng nộp hồ sơ'.",
+    "expected_sources": ["article_01.md"]
+  },
+  {
+    "id": "Q04",
+    "school": "HUST",
+    "doc_type": "legal",
+    "question": "Mỗi học kỳ chính sinh viên Bách Khoa Hà Nội được đăng ký tối thiểu và tối đa bao nhiêu tín chỉ?",
+    "expected_answer": "Tối thiểu 12 tín chỉ và tối đa 24 tín chỉ mỗi học kỳ chính. Sinh viên bị cảnh báo học tập mức 1 chỉ được đăng ký tối đa 14 tín chỉ.",
+    "expected_context": "Quy chế đào tạo đại học HUST, Điều 1 'Đăng ký học phần và Khối lượng học tập'; đối chiếu hướng dẫn đăng ký học phần CTT-SIS mục 1.",
+    "expected_sources": ["quy-che-dao-tao-dai-hoc-hust.md", "article_02.md"]
+  },
+  {
+    "id": "Q05",
+    "school": "HUST",
+    "doc_type": "news",
+    "question": "Sinh viên HUST có thể thanh toán học phí trực tuyến bằng những phương thức nào?",
+    "expected_answer": "Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS có tích hợp VNPAY hoặc Momo, hoặc chuyển khoản ngân hàng qua mã định danh sinh viên theo dạng HUST + MSSV.",
+    "expected_context": "Hướng dẫn đăng ký học phần và thanh toán học phí HUST, mục 2 'Phương thức thanh toán học phí qua mã định danh'.",
+    "expected_sources": ["article_02.md"]
+  },
+  {
+    "id": "Q06",
+    "school": "HUST",
+    "doc_type": "news",
+    "question": "Chuyện gì xảy ra nếu sinh viên HUST không hoàn tất nghĩa vụ học phí đúng hạn?",
+    "expected_answer": "Sinh viên sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
+    "expected_context": "Hướng dẫn đăng ký học phần và thanh toán học phí HUST, mục 3 'Lưu ý về Công nợ'.",
+    "expected_sources": ["article_02.md"]
+  },
+  {
+    "id": "Q07",
+    "school": "HUST",
+    "doc_type": "news",
+    "question": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí và sinh hoạt phí ở mức nào?",
+    "expected_answer": "Hỗ trợ học phí toàn phần 100% chương trình đào tạo và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng.",
+    "expected_context": "Thông báo Học bổng Chính phủ Nghị định 179 tại HUST, mục 1 'Mức hỗ trợ tài chính'.",
+    "expected_sources": ["article_03.md"]
+  },
+  {
+    "id": "Q08",
+    "school": "HUST",
+    "doc_type": "legal",
+    "question": "Học phí một năm của chương trình chuẩn và chương trình ELITECH tại HUST là bao nhiêu?",
+    "expected_answer": "Chương trình chuẩn từ 28.000.000 đến 35.000.000 VNĐ/năm học. Chương trình ELITECH và tiên tiến từ 45.000.000 đến 67.000.000 VNĐ/năm học.",
+    "expected_context": "Quy định học phí và học bổng HUST, MUC 1 'Quy định về Học phí'.",
+    "expected_sources": ["quy-dinh-hoc-phi-hoc-bong-hust.md"]
+  },
+  {
+    "id": "Q09",
+    "school": "HUST",
+    "doc_type": "legal",
+    "question": "Chuẩn đầu ra tiếng Anh của sinh viên đại học chính quy Bách Khoa Hà Nội là gì?",
+    "expected_answer": "Chuẩn đầu ra tiếng Anh là TOEIC 500 hoặc IELTS 5.5 trở lên.",
+    "expected_context": "Quy chế đào tạo đại học HUST, Điều 3 'Chuẩn đầu ra Ngoại ngữ và Tin học'.",
+    "expected_sources": ["quy-che-dao-tao-dai-hoc-hust.md"]
+  },
+  {
+    "id": "Q10",
+    "school": "HUST",
+    "doc_type": "legal",
+    "question": "Sinh viên HUST bị cảnh báo học tập bao nhiêu lần liên tiếp thì bị buộc thôi học?",
+    "expected_answer": "Sinh viên bị cảnh báo học tập 3 lần liên tiếp sẽ bị buộc thôi học.",
+    "expected_context": "Quy chế đào tạo đại học HUST, Điều 2 'Đánh giá kết quả học tập và Cảnh báo học tập'.",
+    "expected_sources": ["quy-che-dao-tao-dai-hoc-hust.md"]
+  },
+  {
+    "id": "Q11",
+    "school": "NEU",
+    "doc_type": "news",
+    "question": "Những đối tượng nào được xét miễn, giảm học phí tại Đại học Kinh tế Quốc dân?",
+    "expected_answer": "Sinh viên là con thương binh, bệnh binh, người có công với cách mạng; sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng; sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
+    "expected_context": "Thông báo nộp hồ sơ miễn giảm học phí NEU, mục 1 'Các đối tượng được miễn, giảm học phí'.",
+    "expected_sources": ["article_04.md"]
+  },
+  {
+    "id": "Q12",
+    "school": "NEU",
+    "doc_type": "news",
+    "question": "Sinh viên NEU nộp hồ sơ miễn giảm học phí ở địa điểm nào và trước thời hạn nào?",
+    "expected_answer": "Nộp trực tiếp tại Phòng 102 Nhà A1 Trường Đại học Kinh tế Quốc dân hoặc gửi bưu điện, trước ngày 15/10/2025.",
+    "expected_context": "Thông báo nộp hồ sơ miễn giảm học phí NEU, mục 3 'Địa điểm nộp hồ sơ'.",
+    "expected_sources": ["article_04.md"]
+  },
+  {
+    "id": "Q13",
+    "school": "NEU",
+    "doc_type": "news",
+    "question": "Thư viện NEU có bao nhiêu phòng học nhóm và sinh viên đặt phòng bằng cách nào?",
+    "expected_answer": "Thư viện cung cấp 20 phòng học nhóm trang bị màn hình tương tác và wifi tốc độ cao. Sinh viên đặt phòng trực tuyến qua ứng dụng NEU Mobile hoặc tại quầy lễ tân Thư viện Nhà A2.",
+    "expected_context": "Hướng dẫn khai thác Thư viện số NEU Library, mục 2 'Đăng ký Phòng học nhóm và Không gian làm việc chung'.",
+    "expected_sources": ["article_05.md"]
+  },
+  {
+    "id": "Q14",
+    "school": "NEU",
+    "doc_type": "news",
+    "question": "Học bổng tài trợ Vietcombank và VPBank tại NEU có bao nhiêu suất và trị giá mỗi suất là bao nhiêu?",
+    "expected_answer": "Học bổng Vietcombank có 30 suất, trị giá 15.000.000 VNĐ/suất. Học bổng VPBank Talent có 20 suất, trị giá 20.000.000 VNĐ/suất kèm cơ hội thực tập ngay năm thứ 3.",
+    "expected_context": "Thông báo cấp Học bổng Tài trợ Doanh nghiệp NEU, mục 1 'Số lượng và Mức học bổng'.",
+    "expected_sources": ["article_07.md"]
+  },
+  {
+    "id": "Q15",
+    "school": "NEU",
+    "doc_type": "news",
+    "question": "Điều kiện CPA và điểm rèn luyện để ứng tuyển học bổng doanh nghiệp tại NEU là bao nhiêu?",
+    "expected_answer": "CPA tích lũy từ 3.20 trở lên và điểm rèn luyện từ 80 trở lên, dành cho sinh viên năm 2 và năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.",
+    "expected_context": "Thông báo cấp Học bổng Tài trợ Doanh nghiệp NEU, mục 2 'Tiêu chuẩn ứng tuyển'.",
+    "expected_sources": ["article_07.md"]
+  },
+  {
+    "id": "Q16",
+    "school": "NEU",
+    "doc_type": "legal",
+    "question": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là bao nhiêu?",
+    "expected_answer": "Điểm trung bình tích lũy toàn khóa (CPA) phải đạt từ 2.00 trở lên.",
+    "expected_context": "Quy chế đào tạo trình độ đại học NEU, Điều 2 'Xét và công nhận tốt nghiệp'.",
+    "expected_sources": ["quy-che-dao-tao-dai-hoc-neu.md"]
+  },
+  {
+    "id": "Q17",
+    "school": "HUCE",
+    "doc_type": "news",
+    "question": "Mức học phí trung bình của chương trình đại học chuẩn tại Đại học Xây dựng Hà Nội là bao nhiêu một năm?",
+    "expected_answer": "Khoảng 18,5 triệu đồng (18.500.000 VNĐ) một năm học cho chương trình đại học chuẩn.",
+    "expected_context": "Quyết định 960/QĐ-ĐHXDHN về mức thu học phí theo tín chỉ, mục 1; đối chiếu Quy định học phí học bổng HUCE, Mục 1.",
+    "expected_sources": ["article_08.md", "quy-dinh-hoc-phi-hoc-bong-huce.md"]
+  },
+  {
+    "id": "Q18",
+    "school": "HUCE",
+    "doc_type": "news",
+    "question": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho ai và hỗ trợ những gì?",
+    "expected_answer": "Dành cho nữ sinh viên khóa mới trúng tuyển các ngành Kỹ thuật Xây dựng, Cầu đường, Kiến trúc, Môi trường. Học bổng hỗ trợ 100% học phí toàn bộ khóa học 4,5 năm, kèm trợ cấp sinh hoạt phí, máy tính xách tay và khóa học tiếng Anh giao tiếp chuyên ngành.",
+    "expected_context": "Thông báo Học bổng STEM Quỹ Châu Á HUCE, mục 1 'Giá trị học bổng' và mục 2 'Tiêu chí lựa chọn'.",
+    "expected_sources": ["article_09.md", "quy-dinh-hoc-phi-hoc-bong-huce.md"]
   }
 ]

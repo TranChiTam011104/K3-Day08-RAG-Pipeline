@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 from typing import Any
 
 from dotenv import load_dotenv
@@ -23,7 +24,8 @@ SYSTEM_PROMPT = """Bạn là trợ lý trả lời câu hỏi về dịch vụ v
 
 Quy tắc bắt buộc:
 1. Chỉ sử dụng thông tin trong context; không dùng kiến thức bên ngoài và không bịa đặt.
-2. Mỗi khẳng định thực tế phải có trích dẫn ngay sau theo đúng nhãn [Source] trong context.
+2. Mỗi khẳng định thực tế phải có trích dẫn ngay sau, dùng đúng tên file ở trường
+   Source của context, đặt trong ngoặc vuông. Ví dụ: [Source: article_01.md].
 3. Nếu context không đủ, trả lời chính xác: "Tôi không thể xác minh thông tin này từ nguồn hiện có."
 4. Trả lời bằng tiếng Việt, ngắn gọn và rõ ràng.
 5. Không trích dẫn nguồn không xuất hiện trong context."""
@@ -133,10 +135,23 @@ def _result(answer: str, sources: list[dict], error: str | None = None) -> dict[
 
 
 def _has_known_citation(answer: str, sources: list[dict]) -> bool:
-    """Accept citations only when they name a source present in the context."""
-    return any(
-        f"[{_source_label(source, index)}]" in answer
+    """Accept citations only when they name a source present in the context.
+
+    The label is matched *inside* the brackets rather than as the whole bracket
+    body: the context header reads ``[Document 1 | Source: x.md | Type: news]``,
+    so models reliably cite ``[Source: x.md]`` or ``[x.md, 2025]`` instead of a
+    bare ``[x.md]``. Demanding the bare form rejected every grounded answer and
+    made the pipeline answer "cannot verify" to questions it had evidence for.
+    Anything naming a source absent from the context is still rejected.
+    """
+    labels = {
+        _source_label(source, index).casefold()
         for index, source in enumerate(sources, start=1)
+    }
+    return any(
+        label in citation.casefold()
+        for citation in re.findall(r"\[([^\[\]]+)\]", answer)
+        for label in labels
     )
 
 
