@@ -1,0 +1,13 @@
+# Trường Công nghệ ghi dấu ấn tại NEU Open Day 2026
+
+- **Trường:** NEU
+- **Nguồn:** https://nct.neu.edu.vn/post/truong-cong-nghe-ghi-dau-an-tai-neu-open-day-2026-voi-nhieu-hoat-dong-tu-van-va-trai-nghiem-cong-nghe-hap-dan
+- **Ngày crawl:** 2026-08-04
+
+---
+
+# Trường Công nghệ tại NEU Open Day 2026
+
+Ngày 10/5/2026, NEU Open Day 2026 diễn ra tại Đại học Kinh tế Quốc dân với sự tham gia của đông đảo học sinh THPT và phụ huynh. Sự kiện cung cấp thông tin về chương trình đào tạo, phương thức tuyển sinh và định hướng nghề nghiệp.
+
+Khu vực của Trường Công nghệ tổ chức tư vấn trực tiếp về ngành học, môi trường học tập, cơ hội nghề nghiệp và xu hướng công nghệ. Trường có sáu khoa chuyên môn và đào tạo 17 ngành, chương trình trong các lĩnh vực như công nghệ thông tin, khoa học dữ liệu, trí tuệ nhân tạo, hệ thống thông tin quản lý, toán kinh tế, định phí bảo hiểm và thống kê.

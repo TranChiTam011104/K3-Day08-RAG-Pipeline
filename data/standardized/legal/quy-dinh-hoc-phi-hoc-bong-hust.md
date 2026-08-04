@@ -1,0 +1,20 @@
+QUY DINH HOC PHI VA HOC BONG SINH VIEN - DAI HOC BACH KHOA HA NOI \(HUST\)
+
+QUYET DINH MUC THU HOC PHI VA CHINH SACH HOC BONG
+Truong: Dai hoc Bach Khoa Ha Noi \(HUST\)
+Quyet dinh so: 1024/QD-DHBK
+
+MUC 1: Quy dinh ve Hoc phi
+- Hoc phi duoc tinh theo so tin chi hoc phi \(TCHP\) dang ky trong hoc ky.
+- Muc hoc phi chuong trinh chuan: 28.000.000 VN den 35.000.000 VN / nam hoc.
+- Muc hoc phi chuong trinh ELITECH va Tin tien: 45.000.000 VN den 67.000.000 VN / nam hoc.
+- Hoc ky he: Muc hoc phi tinh bang 1.5 lan hoc ky chinh.
+
+MUC 2: Chinh sach Hoc bong Khuyen khich Hoc tap \(KKHT\)
+- Hoc bong loai A \(Xuat sac\): GPA >= 3.6, Diem ren luyen >= 90. Muc hoc bong: 120% hoc phi.
+- Hoc bong loai B \(Gioi\): GPA >= 3.2, Diem ren luyen >= 80. Muc hoc bong: 100% hoc phi.
+- Hoc bong loai C \(Kha\): GPA >= 2.5, Diem ren luyen >= 65. Muc hoc bong: 50% hoc phi.
+
+MUC 3: Hoc bong Tran Dai Nghia va Hoc bong Nghin cuu sinh
+- Hoc bong Tran Dai Nghia ho tro 50%-100% hoc phi cho sinh vien co hoan canh dac biet kho khan.
+- Nghin cuu sinh tien si trung tuyen duoc cap hoc bong 100% hoc phi.
