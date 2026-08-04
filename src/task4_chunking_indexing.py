@@ -40,16 +40,24 @@ CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
 # CONFIGURATION — Giải thích lựa chọn của bạn trong comment
 # =============================================================================
 
-# TODO: Chọn chunking strategy và giải thích vì sao
-CHUNK_SIZE = 500        # Vì sao chọn 500? ...
-CHUNK_OVERLAP = 50      # Vì sao chọn 50? ...
+# Chunking strategy: RecursiveCharacterTextSplitter
+# Tại sao: an toàn, tách theo ngữ cảnh (paragraph → sentence), không phá vỡ ý
+# khi không tìm được dấu ngắt. Overlap 100 chars đảm bảo chunk liền kề
+# giữ lại ngữ cảnh xuyên biên giới, tránh mất thông tin ở vùng ranh giới.
+CHUNK_SIZE = 800
+CHUNK_OVERLAP = 100
 CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
-# TODO: Chọn embedding model và giải thích
-EMBEDDING_MODEL = "BAAI/bge-m3"  # Vì sao? Multilingual, tốt cho tiếng Việt lẫn tiếng Anh
+# Embedding model: BAAI/bge-m3 (1024 dim, multilingual)
+# Tại sao: (1) multilingual — hỗ trợ cả tiếng Việt và tiếng Anh, phù hợp dữ liệu
+# RMIT Vietnam có cả hai ngôn ngữ; (2) 1024 dim — vector dài hơn MiniLM (384 dim)
+# → encode语义 tốt hơn; (3) BAAI/bge-m3 benchmark tốt trên MTEB.
+EMBEDDING_MODEL = "BAAI/bge-m3"
 EMBEDDING_DIM = 1024
 
-# TODO: Chọn vector store
+# Vector store: ChromaDB (local, persistent)
+# Tại sao: đơn giản, không cần Docker, lưu persistent trên disk (thư mục chroma_db/),
+# hỗ trợ cosine similarity native, phù hợp bài lab.
 VECTOR_STORE = "chromadb"  # "chromadb" | "weaviate" | "faiss"
 COLLECTION_NAME = "university_services_docs"
 
