@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -44,6 +45,9 @@ RAW_RUNS_PATH = Path(__file__).parent / "raw_runs.json"
 # là chính model đang bị chấm.
 JUDGE_MODEL = os.getenv("RAGAS_JUDGE_MODEL", "gpt-4o-mini")
 JUDGE_EMBEDDING_MODEL = os.getenv("RAGAS_JUDGE_EMBEDDING", "text-embedding-3-small")
+JUDGE_MAX_WORKERS = int(os.getenv("RAGAS_MAX_WORKERS", "4"))
+# Nghỉ giữa hai config để hạn mức token/phút hồi lại trước khi config sau chạy.
+COOLDOWN_BETWEEN_CONFIGS_S = float(os.getenv("RAGAS_COOLDOWN_S", "70"))
 TOP_K = 5
 
 METRIC_COLUMNS = [
@@ -207,6 +211,7 @@ def evaluate_with_ragas(records: list[dict]) -> Any:
         context_recall,
         faithfulness,
     )
+    from ragas.run_config import RunConfig
 
     dataset = Dataset.from_dict(
         {
@@ -219,14 +224,26 @@ def evaluate_with_ragas(records: list[dict]) -> Any:
         }
     )
 
-    judge_llm = ChatOpenAI(model=JUDGE_MODEL, temperature=0.0)
-    judge_embeddings = OpenAIEmbeddings(model=JUDGE_EMBEDDING_MODEL)
+    # Judge fail vì lỗi mạng/429 sẽ khiến RAGAS trả NaN cho metric đó. NaN không
+    # phải điểm 0 — nó là "không chấm được" — và nếu quá nhiều thì trung bình chỉ
+    # còn dựa trên vài mẫu. Để SDK tự retry là cách rẻ nhất để tránh chuyện đó.
+    judge_llm = ChatOpenAI(
+        model=JUDGE_MODEL, temperature=0.0, max_retries=6, timeout=60.0
+    )
+    judge_embeddings = OpenAIEmbeddings(
+        model=JUDGE_EMBEDDING_MODEL, max_retries=6, timeout=60.0
+    )
 
+    # RAGAS mặc định 16 worker song song. Với hạn mức 200k token/phút của tổ chức,
+    # chấm điểm config này sẽ hút cạn quota và làm phần generation của config kế
+    # tiếp ăn 429 — điểm tụt vì rate limit chứ không phải vì config kém, tức là
+    # A/B mất giá trị so sánh. Hạ worker để giữ tải dưới trần TPM.
     result = evaluate(
         dataset,
         metrics=[faithfulness, answer_relevancy, context_recall, context_precision],
         llm=judge_llm,
         embeddings=judge_embeddings,
+        run_config=RunConfig(max_workers=JUDGE_MAX_WORKERS, max_retries=10),
     )
 
     frame = result.to_pandas()
@@ -235,17 +252,39 @@ def evaluate_with_ragas(records: list[dict]) -> Any:
 
 
 def _mean_scores(frame: Any) -> dict[str, float]:
-    """Trung bình từng metric, bỏ qua NaN (RAGAS trả NaN khi judge parse lỗi)."""
+    """Trung bình từng metric kèm số mẫu chấm được.
+
+    RAGAS trả NaN khi judge lỗi (mạng, 429, JSON hỏng). NaN KHÁC điểm 0: bỏ qua
+    NaN rồi in ra trung bình là cách âm thầm báo cáo điểm của 2 mẫu như thể của
+    18. Vì vậy ``n_<metric>`` được trả kèm để người đọc biết mẫu thật là bao nhiêu.
+    """
     scores: dict[str, float] = {}
+    total = len(frame)
     for column in METRIC_COLUMNS:
         if column in frame.columns:
-            value = frame[column].astype("float64").mean(skipna=True)
+            series = frame[column].astype("float64")
+            valid_count = int(series.notna().sum())
+            value = series.mean(skipna=True) if valid_count else float("nan")
             scores[column] = float(value) if value == value else float("nan")
         else:
+            valid_count = 0
             scores[column] = float("nan")
-    valid = [v for v in scores.values() if v == v]
+        scores[f"n_{column}"] = valid_count
+    scores["n_samples"] = total
+
+    valid = [scores[c] for c in METRIC_COLUMNS if scores[c] == scores[c]]
     scores["average"] = sum(valid) / len(valid) if valid else float("nan")
     return scores
+
+
+def _coverage_warnings(scores: dict[str, float], threshold: float = 0.9) -> list[str]:
+    """Metric nào chấm được quá ít mẫu thì không được coi là đáng tin."""
+    total = int(scores.get("n_samples", 0)) or 1
+    return [
+        f"{column}: chỉ {int(scores.get(f'n_{column}', 0))}/{total} mẫu chấm được"
+        for column in METRIC_COLUMNS
+        if int(scores.get(f"n_{column}", 0)) < threshold * total
+    ]
 
 
 # =============================================================================
@@ -256,9 +295,21 @@ def compare_configs(golden_dataset: list[dict]) -> dict[str, Any]:
     """Chạy full eval cho từng config và gom lại để so sánh."""
     comparison: dict[str, Any] = {}
 
-    for config_name, config in CONFIGS.items():
+    for position, (config_name, config) in enumerate(CONFIGS.items()):
+        if position:
+            print(f"\n[i] Nghỉ {COOLDOWN_BETWEEN_CONFIGS_S:.0f}s cho quota token/phút hồi lại...")
+            time.sleep(COOLDOWN_BETWEEN_CONFIGS_S)
+
         print(f"\n=== {config['label']} ===")
         records = run_pipeline(config_name, golden_dataset)
+
+        # Câu hỏng vì hạ tầng (429/timeout) làm điểm tụt mà không liên quan tới
+        # chất lượng retrieval — phải lộ ra thay vì lặng lẽ trộn vào trung bình.
+        throttled = [r["id"] for r in records if r["error"] and "429" in str(r["error"])]
+        if throttled:
+            print(f"  [!] CẢNH BÁO: {len(throttled)} câu hỏng vì rate limit: {throttled}")
+            print("  [!] Điểm của config này KHÔNG dùng để so sánh A/B được.")
+
         print(f"  -> chấm điểm RAGAS ({len(records)} samples, judge={JUDGE_MODEL})...")
         frame = evaluate_with_ragas(records)
         comparison[config_name] = {
@@ -267,8 +318,18 @@ def compare_configs(golden_dataset: list[dict]) -> dict[str, Any]:
             "records": records,
             "frame": frame,
             "scores": _mean_scores(frame),
+            "throttled": throttled,
         }
-        print(f"  -> {comparison[config_name]['scores']}")
+        scores = comparison[config_name]["scores"]
+        print(
+            "  -> "
+            + " ".join(
+                f"{c}={_fmt(scores[c])}(n={int(scores[f'n_{c}'])}/{int(scores['n_samples'])})"
+                for c in METRIC_COLUMNS
+            )
+        )
+        for warning in _coverage_warnings(scores):
+            print(f"  [!] ĐỘ PHỦ THẤP — {warning}; điểm này không đại diện.")
 
     return comparison
 
@@ -350,6 +411,37 @@ def _fmt_delta(a: Any, b: Any) -> str:
     return f"{sign}{delta:.3f}"
 
 
+# Phần phân tích do người viết, nằm giữa các marker này. Số liệu thì sinh lại mỗi
+# lần chạy, nhưng văn xuôi thì không — nếu ghi đè cả file thì mỗi lần chạy lại eval
+# là mất sạch phần phân tích, nên nội dung giữa marker được đọc lại và giữ nguyên.
+ANALYSIS_KEYS = ("CONCLUSION", "ROOT_CAUSE", "RECOMMENDATIONS")
+
+
+def _load_existing_analysis() -> dict[str, str]:
+    if not RESULTS_PATH.exists():
+        return {}
+    text = RESULTS_PATH.read_text(encoding="utf-8")
+    found: dict[str, str] = {}
+    for key in ANALYSIS_KEYS:
+        match = re.search(
+            rf"<!-- ANALYSIS:{key}:START -->\n(.*?)\n<!-- ANALYSIS:{key}:END -->",
+            text,
+            re.S,
+        )
+        if match and match.group(1).strip():
+            found[key] = match.group(1)
+    return found
+
+
+def _analysis_block(key: str, existing: dict[str, str]) -> list[str]:
+    body = existing.get(
+        key,
+        f"_(Chưa viết phân tích cho {key}. Điền vào giữa hai marker — "
+        "lần chạy eval sau sẽ giữ nguyên phần này.)_",
+    )
+    return [f"<!-- ANALYSIS:{key}:START -->", body, f"<!-- ANALYSIS:{key}:END -->"]
+
+
 METRIC_LABELS = {
     "faithfulness": "Faithfulness",
     "answer_relevancy": "Answer Relevance",
@@ -365,6 +457,7 @@ def export_results(comparison: dict[str, Any], probes: list[dict]) -> None:
     config_b = comparison["B_dense_only"]
     scores_a = config_a["scores"]
     scores_b = config_b["scores"]
+    existing_analysis = _load_existing_analysis()
 
     lines: list[str] = []
     lines.append("# RAG Evaluation Results")
@@ -392,12 +485,41 @@ def export_results(comparison: dict[str, Any], probes: list[dict]) -> None:
     # ── Overall scores ───────────────────────────────────────────────────
     lines.append("## Overall Scores")
     lines.append("")
-    lines.append("| Metric | Config A (hybrid + rerank) | Config B (dense-only) | Δ (A−B) |")
-    lines.append("|--------|---------------------------|----------------------|---------|")
+    lines.append(
+        "| Metric | Config A (hybrid + rerank) | Config B (dense-only) | Δ (A−B) | Mẫu chấm được |"
+    )
+    lines.append(
+        "|--------|---------------------------|----------------------|---------|---------------|"
+    )
+    total_samples = int(scores_a.get("n_samples", 0))
     for key in [*METRIC_COLUMNS, "average"]:
+        if key == "average":
+            coverage = "—"
+        else:
+            coverage = (
+                f"A {int(scores_a.get(f'n_{key}', 0))}/{total_samples} · "
+                f"B {int(scores_b.get(f'n_{key}', 0))}/{total_samples}"
+            )
         lines.append(
             f"| {METRIC_LABELS[key]} | {_fmt(scores_a.get(key))} | "
-            f"{_fmt(scores_b.get(key))} | {_fmt_delta(scores_a.get(key), scores_b.get(key))} |"
+            f"{_fmt(scores_b.get(key))} | {_fmt_delta(scores_a.get(key), scores_b.get(key))} | "
+            f"{coverage} |"
+        )
+    lines.append("")
+
+    warnings_a = _coverage_warnings(scores_a)
+    warnings_b = _coverage_warnings(scores_b)
+    if warnings_a or warnings_b:
+        lines.append(
+            "> ⚠️ **Độ phủ thấp** — RAGAS trả NaN khi judge lỗi (mạng/429/JSON hỏng), "
+            "và NaN không phải điểm 0 mà là *không chấm được*. "
+            + ("Config A: " + "; ".join(warnings_a) + ". " if warnings_a else "")
+            + ("Config B: " + "; ".join(warnings_b) + ". " if warnings_b else "")
+            + "Những metric này chỉ là trung bình của phần mẫu còn lại, đừng trích dẫn như kết quả cuối."
+        )
+    else:
+        lines.append(
+            f"> ✅ Cả 4 metric đều chấm được đủ {total_samples}/{total_samples} mẫu ở cả hai config."
         )
     lines.append("")
     lines.append("---")
@@ -427,7 +549,22 @@ def export_results(comparison: dict[str, Any], probes: list[dict]) -> None:
         f"Config A `{latency_a:.2f}s` · Config B `{latency_b:.2f}s`"
     )
     lines.append("")
-    lines.append("<!-- ANALYSIS:CONCLUSION -->")
+    throttled_a = config_a.get("throttled") or []
+    throttled_b = config_b.get("throttled") or []
+    if throttled_a or throttled_b:
+        lines.append(
+            f"> ⚠️ **Run bị nhiễu rate limit** — Config A: `{throttled_a or 'không'}`, "
+            f"Config B: `{throttled_b or 'không'}`. Những câu này hỏng vì HTTP 429 "
+            "chứ không phải vì retrieval kém, nên điểm trung bình KHÔNG dùng để so "
+            "sánh A/B được. Chạy lại với `RAGAS_MAX_WORKERS` thấp hơn."
+        )
+    else:
+        lines.append(
+            "> ✅ Không câu nào hỏng vì rate limit ở cả hai config — chênh lệch điểm "
+            "phản ánh đúng khác biệt về retrieval."
+        )
+    lines.append("")
+    lines.extend(_analysis_block("CONCLUSION", existing_analysis))
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -466,7 +603,7 @@ def export_results(comparison: dict[str, Any], probes: list[dict]) -> None:
             f"{_fmt(row['context_precision'])} | {row['stage']} |"
         )
     lines.append("")
-    lines.append("<!-- ANALYSIS:ROOT_CAUSE -->")
+    lines.extend(_analysis_block("ROOT_CAUSE", existing_analysis))
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -492,7 +629,7 @@ def export_results(comparison: dict[str, Any], probes: list[dict]) -> None:
 
     lines.append("## Recommendations")
     lines.append("")
-    lines.append("<!-- ANALYSIS:RECOMMENDATIONS -->")
+    lines.extend(_analysis_block("RECOMMENDATIONS", existing_analysis))
     lines.append("")
 
     RESULTS_PATH.write_text("\n".join(lines), encoding="utf-8")
@@ -502,6 +639,7 @@ def export_results(comparison: dict[str, Any], probes: list[dict]) -> None:
         name: {
             "label": config["label"],
             "scores": config["scores"],
+            "throttled": config.get("throttled", []),
             "records": config["records"],
             "per_question": json.loads(
                 config["frame"][["id", *METRIC_COLUMNS]].to_json(orient="records")

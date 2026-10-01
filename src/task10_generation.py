@@ -94,16 +94,20 @@ def _call_llm(user_message: str) -> str:
 
     from openai import OpenAI
 
+    # A 429 from a per-minute quota clears in milliseconds, so giving up after one
+    # attempt turns a transient throttle into a permanent "cannot verify" answer —
+    # both in the chatbot and, more damagingly, in the evaluation numbers. The SDK
+    # honours Retry-After, so retries cost nothing when the API is healthy.
     if openrouter_key:
         client = OpenAI(
             api_key=openrouter_key,
             base_url="https://openrouter.ai/api/v1",
             timeout=45.0,
-            max_retries=1,
+            max_retries=5,
         )
         model = LLM_MODEL
     else:
-        client = OpenAI(api_key=openai_key, timeout=45.0, max_retries=1)
+        client = OpenAI(api_key=openai_key, timeout=45.0, max_retries=5)
         model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 
     response = client.chat.completions.create(

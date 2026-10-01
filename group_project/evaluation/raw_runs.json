@@ -2,12 +2,18 @@
   "A_hybrid_rerank": {
     "label": "Config A — hybrid (dense + BM25) + RRF rerank",
     "scores": {
-      "faithfulness": 0.9305555555555556,
-      "answer_relevancy": 0.5921124513879753,
+      "faithfulness": 0.914814814814815,
+      "n_faithfulness": 18,
+      "answer_relevancy": 0.5922775867315283,
+      "n_answer_relevancy": 18,
       "context_recall": 1.0,
-      "context_precision": 0.9304012345384041,
-      "average": 0.8632673103704838
+      "n_context_recall": 18,
+      "context_precision": 0.9446759258957813,
+      "n_context_precision": 18,
+      "n_samples": 18,
+      "average": 0.8629420818605311
     },
+    "throttled": [],
     "records": [
       {
         "id": "Q01",
@@ -36,7 +42,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 5.1
+        "latency_s": 7.79
       },
       {
         "id": "Q02",
@@ -65,7 +71,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.13
+        "latency_s": 2.28
       },
       {
         "id": "Q03",
@@ -93,7 +99,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 1.9
+        "latency_s": 2.0
       },
       {
         "id": "Q04",
@@ -122,7 +128,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.07
+        "latency_s": 1.8
       },
       {
         "id": "Q05",
@@ -150,7 +156,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.62
+        "latency_s": 1.88
       },
       {
         "id": "Q06",
@@ -178,14 +184,14 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 1.67
+        "latency_s": 2.37
       },
       {
         "id": "Q07",
         "school": "HUST",
         "doc_type": "news",
         "question": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí và sinh hoạt phí ở mức nào?",
-        "answer": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo) và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng. [Source: article_03.md]",
+        "answer": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ 100% học phí chương trình đào tạo và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng. [Source: article_03.md]",
         "contexts": [
           "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
           "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
@@ -206,14 +212,14 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.46
+        "latency_s": 2.12
       },
       {
         "id": "Q08",
         "school": "HUST",
         "doc_type": "legal",
         "question": "Học phí một năm của chương trình chuẩn và chương trình ELITECH tại HUST là bao nhiêu?",
-        "answer": "Học phí một năm của chương trình chuẩn tại HUST là từ 28.000.000 VN đến 35.000.000 VN, trong khi học phí của chương trình ELITECH là từ 45.000.000 VN đến 67.000.000 VN. [Source: quy-dinh-hoc-phi-hoc-bong-hust.md]",
+        "answer": "Học phí một năm của chương trình chuẩn tại HUST là từ 28.000.000 VN đến 35.000.000 VN, trong khi học phí của chương trình ELITECH là từ 45.000.000 VN đến 67.000.000 VN [Source: quy-dinh-hoc-phi-hoc-bong-hust.md].",
         "contexts": [
           "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
           "# HUCE - Quy định đóng Học phí theo tín chỉ năm học 2025-2026 (Quyết định 960/QĐ-ĐHXDHN)\n\n- **Trường:** HUCE\n- **Nguồn:** https://daotao.huce.edu.vn/tin-tuc/quy-dinh-dong-hoc-phi-theo-tin-chi-nam-hoc-2025-2026-quyet-dinh-960\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Quyết định 960/QĐ-ĐHXDHN về Mức thu Học phí theo tín chỉ tại Đại học Xây dựng Hà Nội\n\nTrường Đại học Xây dựng Hà Nội (HUCE) thông báo mức thu học phí cho năm học 2025-2026 theo hệ thống tín chỉ.\n\n## 1. Mức thu học phí tín chỉ\n- Mức học phí trung bình chương trình đại học chuẩn (Kỹ sư/Kiến trúc sư/Cử nhân): ~18,5 triệu đồng/năm học.\n- Đơn giá tín chỉ lý thuyết và thực hành được áp dụng cụ thể theo Khung đào tạo từng ngành.",
@@ -234,7 +240,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.46
+        "latency_s": 2.17
       },
       {
         "id": "Q09",
@@ -262,14 +268,14 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 1.93
+        "latency_s": 1.84
       },
       {
         "id": "Q10",
         "school": "HUST",
         "doc_type": "legal",
         "question": "Sinh viên HUST bị cảnh báo học tập bao nhiêu lần liên tiếp thì bị buộc thôi học?",
-        "answer": "Sinh viên HUST bị cảnh báo học tập 3 lần liên tiếp thì sẽ bị buộc thôi học [Source: quy-che-dao-tao-dai-hoc-hust.md].",
+        "answer": "Sinh viên HUST bị cảnh báo học tập 3 lần liên tiếp sẽ bị buộc thôi học [Source: quy-che-dao-tao-dai-hoc-hust.md].",
         "contexts": [
           "## 2. Phương thức thanh toán học phí qua mã định danh\nSinh viên có thể đóng học phí bằng các cách sau:\n- Thanh toán trực tiếp qua Cổng dịch vụ CTT-SIS (tích hợp VNPAY / Momo).\n- Chuyển khoản ngân hàng qua mã định danh sinh viên (Ví dụ: `HUST + MSSV`).\n\n## 3. Lưu ý về Công nợ\nSinh viên không hoàn tất nghĩa vụ học phí đúng hạn sẽ bị hủy đăng ký học phần và không được dự thi kết thúc học phần.",
           "QUY CHE DAO TAO DAI HOC HET CHINH QUY - DAI HOC BACH KHOA HA NOI \\(HUST\\)\n\nQUYET DINH BAN HANH QUY CHE DAO TAO DAI HOC HET CHINH QUY\nTruong: Dai hoc Bach Khoa Ha Noi \\(HUST\\)\nNam hoc: 2025-2026\n\nChieu 1: Dang ky hoc phan va Khoi luong hoc tap\n- Sinh vin dang ky hoc phan qua Cong thong tin SIS \\(ctt-sis.hust.edu.vn\\).\n- Khoi luong hoc tap toi thieu moi hoc ky chinh la 12 tin chi, toi da la 24 tin chi.\n- Sinh vien bi canh bao hoc tap muc 1 chi duoc dang ky toi da 14 tin chi.\n\nChieu 2: Danh gia ket qua hoc tap va Canh bao hoc tap\n- Diem hoc phan duoc tinh theo thang diem 4 \\(A, B, C, D, F\\).\n- Sinh vien co GPA duoi 1.0 se bi canh bao hoc tap muc 1.\n- Sinh vien bi canh bao hoc tap 3 lan lien tiep se bi buoc thoi hoc.",
@@ -290,7 +296,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 1.77
+        "latency_s": 1.65
       },
       {
         "id": "Q11",
@@ -318,7 +324,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.23
+        "latency_s": 2.8
       },
       {
         "id": "Q12",
@@ -346,7 +352,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.05
+        "latency_s": 2.11
       },
       {
         "id": "Q13",
@@ -374,14 +380,14 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.32
+        "latency_s": 2.04
       },
       {
         "id": "Q14",
         "school": "NEU",
         "doc_type": "news",
         "question": "Học bổng tài trợ Vietcombank và VPBank tại NEU có bao nhiêu suất và trị giá mỗi suất là bao nhiêu?",
-        "answer": "Học bổng tài trợ Vietcombank tại NEU có 30 suất, trị giá mỗi suất là 15.000.000 VNĐ. Học bổng VPBank Talent có 20 suất, trị giá mỗi suất là 20.000.000 VNĐ kèm cơ hội thực tập ngay năm thứ 3 [Source: article_07.md].",
+        "answer": "Học bổng Vietcombank có 30 suất, trị giá 15.000.000 VNĐ/suất. Học bổng VPBank Talent có 20 suất, trị giá 20.000.000 VNĐ/suất [Source: article_07.md].",
         "contexts": [
           "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
           "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
@@ -402,14 +408,14 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 4.16
+        "latency_s": 2.05
       },
       {
         "id": "Q15",
         "school": "NEU",
         "doc_type": "news",
         "question": "Điều kiện CPA và điểm rèn luyện để ứng tuyển học bổng doanh nghiệp tại NEU là bao nhiêu?",
-        "answer": "Điều kiện CPA để ứng tuyển học bổng doanh nghiệp tại NEU là tích lũy >= 3.20 và điểm rèn luyện >= 80 [Source: article_07.md].",
+        "answer": "Điều kiện CPA để ứng tuyển học bổng doanh nghiệp tại NEU là tích lũy >= 3.20, và điểm rèn luyện >= 80 [Source: article_07.md].",
         "contexts": [
           "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
           "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
@@ -430,14 +436,14 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.28
+        "latency_s": 1.96
       },
       {
         "id": "Q16",
         "school": "NEU",
         "doc_type": "legal",
         "question": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là bao nhiêu?",
-        "answer": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là 2.00 [Source: quy-che-dao-tao-dai-hoc-neu.md].",
+        "answer": "Điểm trung bình tích lũy toàn khóa tối thiểu để sinh viên NEU được xét công nhận tốt nghiệp là 2.00 trở lên [Source: quy-che-dao-tao-dai-hoc-neu.md].",
         "contexts": [
           "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
           "## 2. Tiêu chuẩn ứng tuyển\n- Sinh viên năm 2, năm 3 các ngành Tài chính - Ngân hàng, Kế toán, Kiểm toán, Kinh tế, Công nghệ thông tin.\n- CPA tích lũy >= 3.20, Điểm rèn luyện >= 80.\n- Ưu tiên sinh viên tích cực tham gia hoạt động Đoàn - Hội hoặc đạt giải NCKH.",
@@ -458,7 +464,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.42
+        "latency_s": 2.7
       },
       {
         "id": "Q17",
@@ -487,7 +493,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.12
+        "latency_s": 1.77
       },
       {
         "id": "Q18",
@@ -516,7 +522,7 @@
         ],
         "retrieval_source": "hybrid",
         "error": null,
-        "latency_s": 2.78
+        "latency_s": 2.58
       }
     ],
     "per_question": [
@@ -529,78 +535,78 @@
       },
       {
         "id": "Q02",
-        "faithfulness": 0.75,
-        "answer_relevancy": 0.6475715591,
+        "faithfulness": 0.8,
+        "answer_relevancy": 0.6635861609,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q03",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.5255903018,
+        "answer_relevancy": 0.5846912861,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q04",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.533588434,
+        "answer_relevancy": 0.5336772608,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q05",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.7174119351,
+        "answer_relevancy": 0.7174151867,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q06",
-        "faithfulness": 0.0,
+        "faithfulness": 1.0,
         "answer_relevancy": 0.7067404302,
         "context_recall": 1.0,
-        "context_precision": 0.9166666666
+        "context_precision": 1.0
       },
       {
         "id": "Q07",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.6933827359,
+        "answer_relevancy": 0.7024733602,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q08",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.5474663076,
+        "answer_relevancy": 0.5474650232,
         "context_recall": 1.0,
         "context_precision": 0.95
       },
       {
         "id": "Q09",
-        "faithfulness": 1.0,
-        "answer_relevancy": 0.5109920435,
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.5109685484,
         "context_recall": 1.0,
         "context_precision": 0.7
       },
       {
         "id": "Q10",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.560602338,
+        "answer_relevancy": 0.5553149672,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q11",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.3586191431,
+        "answer_relevancy": 0.3587464956,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q12",
-        "faithfulness": 1.0,
-        "answer_relevancy": 0.5541216247,
+        "faithfulness": 0.6666666667,
+        "answer_relevancy": 0.5541804968,
         "context_recall": 1.0,
         "context_precision": 0.95
       },
@@ -614,35 +620,35 @@
       {
         "id": "Q14",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.7134310443,
+        "answer_relevancy": 0.6372473166,
         "context_recall": 1.0,
         "context_precision": 0.9999999999
       },
       {
         "id": "Q15",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.6443051145,
+        "answer_relevancy": 0.644280489,
         "context_recall": 1.0,
         "context_precision": 0.8875
       },
       {
         "id": "Q16",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.5175815569,
+        "answer_relevancy": 0.5175560363,
         "context_recall": 1.0,
-        "context_precision": 0.5888888889
+        "context_precision": 0.6791666666
       },
       {
         "id": "Q17",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.5955703274,
+        "answer_relevancy": 0.5956057825,
         "context_recall": 1.0,
-        "context_precision": 0.8666666666
+        "context_precision": 0.95
       },
       {
         "id": "Q18",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.6478533754,
+        "answer_relevancy": 0.6478518671,
         "context_recall": 1.0,
         "context_precision": 1.0
       }
@@ -651,12 +657,18 @@
   "B_dense_only": {
     "label": "Config B — dense-only, không rerank",
     "scores": {
-      "faithfulness": 0.4354166666666666,
-      "answer_relevancy": 0.3631582378965441,
+      "faithfulness": 0.7037037037037037,
+      "n_faithfulness": 18,
+      "answer_relevancy": 0.49125796745450206,
+      "n_answer_relevancy": 18,
       "context_recall": 0.9444444444444444,
-      "context_precision": 0.8791666666380382,
-      "average": 0.6555465039114233
+      "n_context_recall": 18,
+      "context_precision": 0.882484567873514,
+      "n_context_precision": 18,
+      "n_samples": 18,
+      "average": 0.7554726708690411
     },
+    "throttled": [],
     "records": [
       {
         "id": "Q01",
@@ -685,14 +697,14 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.34
+        "latency_s": 2.02
       },
       {
         "id": "Q02",
         "school": "HUST",
         "doc_type": "news",
         "question": "Học bổng Trần Đại Nghĩa của HUST dành cho đối tượng nào và mức hỗ trợ là bao nhiêu?",
-        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "answer": "Học bổng Trần Đại Nghĩa của HUST dành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất. Mức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí [Source: article_01.md].",
         "contexts": [
           "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
           "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
@@ -713,15 +725,15 @@
           "article_01.md"
         ],
         "retrieval_source": "dense",
-        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 199510, Requested 1349. Please try again in 257ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
-        "latency_s": 1.73
+        "error": null,
+        "latency_s": 2.26
       },
       {
         "id": "Q03",
         "school": "HUST",
         "doc_type": "news",
         "question": "Sinh viên HUST nộp hồ sơ xét học bổng khuyến khích học tập học kỳ 1 trước ngày nào và qua cổng nào?",
-        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "answer": "Sinh viên HUST nộp hồ sơ xét học bổng khuyến khích học tập học kỳ 1 trước ngày 28/11/2025 và qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` [Source: article_01.md].",
         "contexts": [
           "# HUST - Thông báo xét cấp Học bổng Khuyến khích Học tập & Học bổng Trần Đại Nghĩa Học kỳ 1\n\n- **Trường:** HUST\n- **Nguồn:** https://ctsv.hust.edu.vn/tin-tuc/thong-bao-xet-cap-hoc-bong-khuyen-khich-hoc-tap-hoc-ky-1-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Thông báo xét cấp Học bổng Khuyến khích Học tập (KKHT) & Học bổng Trần Đại Nghĩa - ĐH Bách Khoa Hà Nội\n\nBan Công tác Sinh viên (CTSV) Đại học Bách Khoa Hà Nội thông báo quy trình xét cấp Học bổng KKHT Học kỳ 1 năm học 2025-2026.",
           "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
@@ -741,15 +753,15 @@
           "article_02.md"
         ],
         "retrieval_source": "dense",
-        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 199358, Requested 1261. Please try again in 185ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
-        "latency_s": 1.67
+        "error": null,
+        "latency_s": 1.92
       },
       {
         "id": "Q04",
         "school": "HUST",
         "doc_type": "legal",
         "question": "Mỗi học kỳ chính sinh viên Bách Khoa Hà Nội được đăng ký tối thiểu và tối đa bao nhiêu tín chỉ?",
-        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "answer": "Mỗi học kỳ chính, sinh viên Bách Khoa Hà Nội được đăng ký tối thiểu 12 tín chỉ và tối đa 24 tín chỉ. [Source: article_02.md]",
         "contexts": [
           "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
           "# HUST - Hướng dẫn Đăng ký học phần & Thanh toán Học phí trực tuyến qua cổng CTT-SIS\n\n- **Trường:** HUST\n- **Nguồn:** https://ctt.hust.edu.vn/tin-tuc/huong-dan-dang-ky-hoc-phan-va-thanh-toan-hoc-phi-online\n- **Ngày crawl:** 2026-08-04T10:23:17.430869\n\n---\n\n# Hướng dẫn Đăng ký Học phần và Thanh toán Học phí trực tuyến tại HUST\n\nPhòng Đào tạo Đại học Bách Khoa Hà Nội hướng dẫn sinh viên quy trình đăng ký học phần học kỳ mới và nộp học phí trực tuyến.\n\n## 1. Lịch đăng ký học phần trên CTT-SIS\n- **Đợt 1 (Đăng ký học phần kế hoạch):** Mở từ tuần 12 đến tuần 14 của học kỳ.\n- **Đợt 2 (Đăng ký điều chỉnh & đăng ký tự do):** Mở trước học kỳ mới 2 tuần.\n- **Hạn ngạch tín chỉ:** Tối thiểu 12 tín chỉ, tối đa 24 tín chỉ đối với sinh viên bình thường.",
@@ -770,8 +782,8 @@
           "article_03.md"
         ],
         "retrieval_source": "dense",
-        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 199344, Requested 1127. Please try again in 141ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
-        "latency_s": 1.92
+        "error": null,
+        "latency_s": 1.93
       },
       {
         "id": "Q05",
@@ -799,7 +811,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.17
+        "latency_s": 2.1
       },
       {
         "id": "Q06",
@@ -827,14 +839,14 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.76
+        "latency_s": 1.76
       },
       {
         "id": "Q07",
         "school": "HUST",
         "doc_type": "news",
         "question": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ học phí và sinh hoạt phí ở mức nào?",
-        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "answer": "Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại HUST hỗ trợ 100% học phí chương trình đào tạo và trợ cấp sinh hoạt phí hàng tháng từ 3,7 đến 5,5 triệu đồng/tháng. [Source: article_03.md]",
         "contexts": [
           "# HUST - Thông báo Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP ngành Bán dẫn\n\n- **Trường:** HUST\n- **Nguồn:** https://hust.edu.vn/tin-tuc/hoc-bong-chinh-phu-nghi-dinh-179-nganh-ban-dan-va-cong-nghe-chien-luoc\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Chương trình Học bổng Chính phủ theo Nghị định 179/2026/NĐ-CP tại Đại học Bách Khoa Hà Nội\n\nĐại học Bách Khoa Hà Nội triển khai chính sách học bổng trọng điểm của Chính phủ dành cho sinh viên ngành Vi mạch bán dẫn và Công nghệ chiến lược.\n\n## 1. Mức hỗ trợ tài chính\n- Hỗ trợ học phí toàn phần (100% học phí chương trình đào tạo).\n- Trợ cấp sinh hoạt phí hàng tháng từ **3,7 đến 5,5 triệu đồng/tháng**.",
           "# NEU - Thông báo nộp hồ sơ Xét miễn giảm Học phí & Hỗ trợ chi phí học tập năm 2025-2026\n\n- **Trường:** NEU\n- **Nguồn:** https://neu.edu.vn/vi/tin-tuc/thong-bao-nop-ho-so-xet-mien-giam-hoc-phi-nam-hoc-2025-2026\n- **Ngày crawl:** 2026-08-04T10:23:17.431864\n\n---\n\n# Thông báo nộp hồ sơ Miễn giảm Học phí & Hỗ trợ Chi phí Học tập tại NEU\n\nPhòng Công tác chính trị & Quản lý sinh viên Trường Đại học Kinh tế Quốc dân (NEU) thông báo lịch tiếp nhận hồ sơ chính sách.\n\n## 1. Các đối tượng được miễn, giảm học phí\n- Sinh viên là con thương binh, bệnh binh, người có công với cách mạng.\n- Sinh viên mồ côi cả cha lẫn mẹ, sinh viên khuyết tật nặng.\n- Sinh viên hộ nghèo, hộ cận nghèo thuộc vùng kinh tế xã hội đặc biệt khó khăn.",
@@ -854,8 +866,8 @@
           "article_01.md"
         ],
         "retrieval_source": "dense",
-        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 200000, Requested 1292. Please try again in 387ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
-        "latency_s": 1.74
+        "error": null,
+        "latency_s": 2.31
       },
       {
         "id": "Q08",
@@ -882,8 +894,8 @@
           "article_08.md"
         ],
         "retrieval_source": "dense",
-        "error": "Generation unavailable: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-hedASup7m1TIOxjWMADVPoQi on tokens per min (TPM): Limit 200000, Used 200000, Requested 1312. Please try again in 393ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}",
-        "latency_s": 1.54
+        "error": null,
+        "latency_s": 1.88
       },
       {
         "id": "Q09",
@@ -911,7 +923,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.09
+        "latency_s": 1.93
       },
       {
         "id": "Q10",
@@ -939,7 +951,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 1.81
+        "latency_s": 1.71
       },
       {
         "id": "Q11",
@@ -967,7 +979,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.86
+        "latency_s": 2.17
       },
       {
         "id": "Q12",
@@ -995,7 +1007,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 1.99
+        "latency_s": 2.03
       },
       {
         "id": "Q13",
@@ -1023,14 +1035,14 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.55
+        "latency_s": 1.67
       },
       {
         "id": "Q14",
         "school": "NEU",
         "doc_type": "news",
         "question": "Học bổng tài trợ Vietcombank và VPBank tại NEU có bao nhiêu suất và trị giá mỗi suất là bao nhiêu?",
-        "answer": "Học bổng tài trợ Vietcombank có 30 suất, trị giá mỗi suất là 15.000.000 VNĐ. Học bổng VPBank Talent có 20 suất, trị giá mỗi suất là 20.000.000 VNĐ kèm cơ hội thực tập ngay năm thứ 3 [Source: article_07.md].",
+        "answer": "Học bổng tài trợ Vietcombank có 30 suất, trị giá 15.000.000 VNĐ/suất. Học bổng VPBank Talent có 20 suất, trị giá 20.000.000 VNĐ/suất kèm cơ hội thực tập ngay năm thứ 3 [Source: article_07.md].",
         "contexts": [
           "# NEU - Thông báo cấp Học bổng Tài trợ Doanh nghiệp (Vietcombank & VPBank) cho sinh viên xuất sắc\n\n- **Trường:** NEU\n- **Nguồn:** https://phongctctqlsv.neu.edu.vn/tin-tuc/thong-bao-hoc-bong-tai-tro-doanh-nghiep-vietcombank-vpbank-2025\n- **Ngày crawl:** 2026-08-04T10:23:17.434867\n\n---\n\n# Thông báo Cấp Học bổng Tài trợ Doanh nghiệp Ngân hàng (Vietcombank & VPBank)\n\nPhòng CTCT & QLSV NEU thông báo chương trình học bổng tài trợ năm học 2025-2026 đến từ Ngân hàng Vietcombank và VPBank.\n\n## 1. Số lượng và Mức học bổng\n- **Học bổng Vietcombank:** 30 suất, trị giá **15.000.000 VNĐ/suất**.\n- **Học bổng VPBank Talent:** 20 suất, trị giá **20.000.000 VNĐ/suất** kèm cơ hội thực tập ngay năm thứ 3.",
           "## 1. Đối tượng và Điều kiện xét Học bổng KKHT\n- Sinh viên hệ đại học chính quy tích lũy tối thiểu 12 tín chỉ trong học kỳ.\n- **Học bổng loại A (Xuất sắc):** GPA >= 3.6 và Điểm rèn luyện (ĐRL) >= 90. Mức cấp: 120% học phí học kỳ.\n- **Học bổng loại B (Giỏi):** GPA >= 3.2 và ĐRL >= 80. Mức cấp: 100% học phí học kỳ.\n- **Học bổng loại C (Khá):** GPA >= 2.5 và ĐRL >= 65. Mức cấp: 50% học phí học kỳ.\n\n## 2. Học bổng Hỗ trợ Sinh viên Trần Đại Nghĩa\nDành cho sinh viên có hoàn cảnh kinh tế gia đình đặc biệt khó khăn, mồ côi hoặc gặp thiên tai, rủi ro đột xuất.\nMức hỗ trợ từ 50% đến 100% học phí kèm trợ cấp sinh hoạt phí.\n\n## 3. Thời gian và Cổng nộp hồ sơ\nSinh viên nộp minh chứng rèn luyện và đăng ký trực tuyến qua cổng CTT-SIS tại địa chỉ `https://ctt.hust.edu.vn` trước ngày 28/11/2025.",
@@ -1051,7 +1063,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 3.3
+        "latency_s": 2.29
       },
       {
         "id": "Q15",
@@ -1079,7 +1091,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.45
+        "latency_s": 1.66
       },
       {
         "id": "Q16",
@@ -1107,7 +1119,7 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 1.82
+        "latency_s": 1.38
       },
       {
         "id": "Q17",
@@ -1136,14 +1148,14 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.51
+        "latency_s": 1.76
       },
       {
         "id": "Q18",
         "school": "HUCE",
         "doc_type": "news",
         "question": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho ai và hỗ trợ những gì?",
-        "answer": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng. Học bổng này hỗ trợ 100% học phí cho toàn bộ khóa học 4,5 năm, cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành. [Source: article_09.md]",
+        "answer": "Học bổng STEM Quỹ Châu Á tại HUCE dành cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng. Học bổng hỗ trợ 100% học phí cho toàn bộ khóa học 4,5 năm, cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành. [Source: article_09.md]",
         "contexts": [
           "# HUCE - Thông báo Tuyển chọn & Trao học bổng STEM Quỹ Châu Á dành cho sinh viên Nữ ngành Kỹ thuật\n\n- **Trường:** HUCE\n- **Nguồn:** https://ctsv.huce.edu.vn/tin-tuc/thong-bao-tuyen-chon-va-trao-hoc-bong-stem-quy-chau-a-sinh-vien-nu\n- **Ngày crawl:** 2026-08-04T10:23:17.435865\n\n---\n\n# Học bổng STEM Quỹ Châu Á (Asia Foundation) dành cho Sinh viên Nữ HUCE\n\nTrường Đại học Xây dựng Hà Nội phối hợp với Quỹ Châu Á thông báo chương trình Học bổng STEM dành riêng cho nữ sinh viên khối ngành Kỹ thuật & Xây dựng.\n\n## 1. Giá trị học bổng\n- Hỗ trợ **100% học phí** cho toàn bộ khóa học 4,5 năm.\n- Cấp trợ cấp sinh hoạt phí, máy tính xách tay và khóa học Tiếng Anh giao tiếp chuyên ngành.",
           "# HUCE - Hoạt động Thư viện HUCE & Cuộc thi Nghiên cứu Khoa học Sinh viên HUCE-Intech\n\n- **Trường:** HUCE\n- **Nguồn:** https://thuvien.huce.edu.vn/tin-tuc/hoat-dong-thu-vien-huce-va-cuoc-thi-nghien-cuu-khoa-hoc-sinh-vien-huce-intech\n- **Ngày crawl:** 2026-08-04T10:23:17.436877\n\n---\n\n# Hoạt động Thư viện HUCE & Phát động Cuộc thi NCKH Sinh viên HUCE-Intech 2026\n\nThư viện và Ban Khai thác Nghiên cứu Khoa học Trường Đại học Xây dựng Hà Nội tổ chức chuỗi hoạt động học thuật cho sinh viên.\n\n## 1. Dịch vụ Thư viện HUCE\n- Thư viện cung cấp bộ học liệu chuyên ngành Đô thị, Kiến trúc, Xây dựng dân dụng và Công nghiệp.\n- Mở rộng phòng đọc tự học đến 22h00 hàng ngày trong các tuần thi cao điểm.",
@@ -1165,56 +1177,56 @@
         ],
         "retrieval_source": "dense",
         "error": null,
-        "latency_s": 2.6
+        "latency_s": 2.18
       }
     ],
     "per_question": [
       {
         "id": "Q01",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.6264451649,
+        "answer_relevancy": 0.5641835967,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q02",
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.555811709,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q03",
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5581788297,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q04",
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.5837757139,
         "context_recall": 1.0,
         "context_precision": 0.8666666666
       },
       {
         "id": "Q05",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.717419044,
+        "answer_relevancy": 0.7174119351,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q06",
         "faithfulness": 0.5,
-        "answer_relevancy": 0.7067393337,
+        "answer_relevancy": 0.6851173552,
         "context_recall": 1.0,
-        "context_precision": null
+        "context_precision": 1.0
       },
       {
         "id": "Q07",
-        "faithfulness": 0.0,
-        "answer_relevancy": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7299050897,
         "context_recall": 1.0,
         "context_precision": 0.8041666666
       },
@@ -1223,7 +1235,7 @@
         "faithfulness": 0.0,
         "answer_relevancy": 0.0,
         "context_recall": 0.0,
-        "context_precision": 1.0
+        "context_precision": 0.8041666666
       },
       {
         "id": "Q09",
@@ -1237,42 +1249,42 @@
         "faithfulness": 0.0,
         "answer_relevancy": 0.0,
         "context_recall": 1.0,
-        "context_precision": null
+        "context_precision": 0.6791666666
       },
       {
         "id": "Q11",
-        "faithfulness": null,
-        "answer_relevancy": 0.3587037607,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.3586040181,
         "context_recall": 1.0,
         "context_precision": 0.8875
       },
       {
         "id": "Q12",
         "faithfulness": 0.6666666667,
-        "answer_relevancy": 0.5449942072,
+        "answer_relevancy": 0.5449699092,
         "context_recall": 1.0,
         "context_precision": 1.0
       },
       {
         "id": "Q13",
-        "faithfulness": null,
-        "answer_relevancy": 0.5558192892,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.5558070237,
         "context_recall": 1.0,
-        "context_precision": 0.8041666666
+        "context_precision": 1.0
       },
       {
         "id": "Q14",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.6528655173,
+        "answer_relevancy": 0.6372473166,
         "context_recall": 1.0,
         "context_precision": 0.9999999999
       },
       {
         "id": "Q15",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.6265883303,
+        "answer_relevancy": 0.6266091115,
         "context_recall": 1.0,
-        "context_precision": 0.8041666666
+        "context_precision": 0.7555555555
       },
       {
         "id": "Q16",
@@ -1284,14 +1296,14 @@
       {
         "id": "Q17",
         "faithfulness": 1.0,
-        "answer_relevancy": 0.588428216,
+        "answer_relevancy": 0.5907690664,
         "context_recall": 1.0,
-        "context_precision": 0.7
+        "context_precision": 0.8875
       },
       {
         "id": "Q18",
-        "faithfulness": 0.8,
-        "answer_relevancy": 0.6478533754,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6232606959,
         "context_recall": 1.0,
         "context_precision": 1.0
       }
